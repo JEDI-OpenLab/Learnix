@@ -488,6 +488,12 @@ a:hover {
   margin: 0;
 }
 
+.architecture-section .pipeline-list {
+  width: min(100%, 1180px);
+  margin-left: auto;
+  margin-right: auto;
+}
+
 .pipeline-list li {
   position: relative;
   min-height: 150px;
