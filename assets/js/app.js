@@ -48,7 +48,38 @@ tabs.forEach((tab) => {
 
 renderScenario("refus");
 
-const navLinks = Array.from(document.querySelectorAll(".main-nav a"));
+const internalDocumentTargets = {
+  "README.md": "#documentation-depot",
+  "LICENSE.md": "#documentation-licence",
+  "docs/index.md": "#documentation",
+  "docs/demarche.md": "#documentation-demarche",
+  "docs/architecture.md": "#documentation-architecture",
+  "docs/corpus.md": "#documentation-corpus",
+  "corpus/README.md": "#documentation-corpus",
+  "docs/parametrage.md": "#documentation-parametrage",
+  "docs/telegram.md": "#documentation-telegram",
+  "docs/tests.md": "#documentation-tests",
+  "docs/trajectoire.md": "#documentation-trajectoire",
+  "docs/vigilance.md": "#documentation-vigilance",
+  "fiches/scenarios-demo.md": "#documentation-tests",
+  "fiches/grille-tests.md": "#documentation-tests",
+  "fiches/note-intention.md": "#documentation-demarche",
+  "fiches/corpus-manifest.example.yml": "#documentation-corpus",
+};
+
+document.querySelectorAll("a[href]").forEach((link) => {
+  const href = link.getAttribute("href");
+  if (!href) return;
+
+  const normalizedHref = href.replace(/^\.\//, "").split("#")[0].split("?")[0];
+  if (internalDocumentTargets[normalizedHref]) {
+    link.setAttribute("href", internalDocumentTargets[normalizedHref]);
+    link.removeAttribute("target");
+    link.removeAttribute("rel");
+  }
+});
+
+const navLinks = Array.from(document.querySelectorAll(".main-nav a[href^='#']"));
 const sections = navLinks
   .map((link) => document.querySelector(link.getAttribute("href")))
   .filter(Boolean);
@@ -79,6 +110,19 @@ document.querySelectorAll("a[href]").forEach((link) => {
   link.setAttribute("target", "_blank");
   link.setAttribute("rel", "noopener");
 });
+
+function openLinkedDetails() {
+  const id = window.location.hash.slice(1);
+  if (!id) return;
+
+  const target = document.getElementById(id);
+  if (target instanceof HTMLDetailsElement) {
+    target.open = true;
+  }
+}
+
+window.addEventListener("hashchange", openLinkedDetails);
+openLinkedDetails();
 
 const architectureDialog = document.querySelector("#architecture-dialog");
 const openArchitecture = document.querySelector("[data-open-architecture]");
