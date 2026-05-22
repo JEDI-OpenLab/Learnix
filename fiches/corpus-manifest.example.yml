@@ -1,0 +1,21 @@
+# Exemple de manifeste de corpus Learnix.
+# Remplir une entree par document importe et indexe.
+
+version: "0.1"
+date_mise_a_jour: "2026-05-22"
+documents:
+  - id: "alignement-pedagogique-001"
+    titre: "Construire un alignement pédagogique cohérent"
+    auteur_ou_organisme: "À compléter"
+    annee: "À compléter"
+    type: "PDF"
+    theme: "Alignement pédagogique"
+    statut: "public"
+    licence: "A verifier"
+    source_url: ""
+    fichier_source: ""
+    date_import_anythingllm: "À compléter"
+    workspace: "Learnix"
+    qualite_extraction: "bonne"
+    raison_inclusion: "Document de référence pour les questions d'alignement pédagogique."
+    remarques: ""

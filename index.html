@@ -1,0 +1,428 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Learnix | Démonstrateur d'assistant documentaire pédagogique</title>
+    <meta name="description" content="Learnix documente une preuve de concept d'assistant documentaire pédagogique construit avec AnythingLLM, un corpus maîtrisé et une approche RAG.">
+    <meta property="og:title" content="Learnix | Assistant documentaire pédagogique">
+    <meta property="og:description" content="Démonstrateur pédagogique pour explorer les usages raisonnés de l'IA générative dans l'enseignement supérieur.">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="assets/img/learnix.png">
+    <link rel="icon" href="assets/img/favicon.png" type="image/png">
+    <link rel="apple-touch-icon" href="assets/img/learnix.png">
+    <link rel="stylesheet" href="assets/css/styles.css">
+  </head>
+  <body>
+    <a class="skip-link" href="#contenu">Aller au contenu</a>
+
+    <header class="app-header">
+      <a class="brand" href="#demonstrateur" aria-label="Accueil Learnix">
+        <img src="assets/img/learnix.png" alt="" class="brand-mark">
+        <span>
+          <strong>Learnix</strong>
+          <small>assistant documentaire pédagogique</small>
+        </span>
+      </a>
+      <nav class="main-nav" aria-label="Navigation principale">
+        <a href="#demarche">Démarche</a>
+        <a href="#addie">ADDIE</a>
+        <a href="#architecture">Architecture</a>
+        <a href="#corpus">Corpus</a>
+        <a href="#reglages">Réglages</a>
+        <a href="#telegram">Telegram</a>
+        <a href="#limites">Limites</a>
+        <a href="#demo">Tests</a>
+        <a href="#soutenabilite">Impact</a>
+      </nav>
+    </header>
+
+    <main id="contenu">
+      <section id="demonstrateur" class="intro-section section-anchor">
+        <div class="intro-copy">
+          <p class="eyebrow">Preuve de concept personnelle</p>
+          <h1>Learnix est un assistant documentaire en ingénierie pédagogique.</h1>
+          <p class="lead">
+            Il interroge un corpus pédagogique choisi et indexé, afin de répondre à partir de documents
+            maîtrisés plutôt qu'à partir d'une IA généraliste. Le chatbot fonctionne en privé ; cette webapp
+            présente la démarche, les réglages, les limites et les conditions d'un éventuel changement d'échelle.
+          </p>
+          <div class="intro-actions" aria-label="Actions principales">
+            <a class="button primary" href="#demo">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M8 5v14l11-7z"/></svg>
+              Voir les scénarios
+            </a>
+            <a class="button secondary" href="docs/index.md" target="_blank" rel="noopener">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 3h9l3 3v15H6zM14 3v4h4"/></svg>
+              Lire la documentation
+            </a>
+          </div>
+          <dl class="status-grid" aria-label="État du démonstrateur">
+            <div>
+              <dt>Statut</dt>
+              <dd>fonctionnel, privé</dd>
+            </div>
+            <div>
+              <dt>Socle</dt>
+              <dd>AnythingLLM + RAG</dd>
+            </div>
+            <div>
+              <dt>Modèle</dt>
+              <dd>API distante ou modèle local</dd>
+            </div>
+            <div>
+              <dt>Licence</dt>
+              <dd>CC0 pour les contenus originaux</dd>
+            </div>
+          </dl>
+        </div>
+        <figure class="architecture-visual" aria-labelledby="architecture-title">
+          <img src="assets/img/learnix-architecture.svg" alt="Schéma de l'architecture Learnix : utilisateur, interfaces, AnythingLLM, corpus, API ou modèle local, réponse.">
+          <figcaption id="architecture-title">Architecture de principe du démonstrateur Learnix</figcaption>
+          <button class="figure-action" type="button" data-open-architecture>
+            Agrandir le schéma
+          </button>
+        </figure>
+      </section>
+
+      <dialog class="image-dialog" id="architecture-dialog" aria-labelledby="architecture-dialog-title">
+        <div class="dialog-header">
+          <h2 id="architecture-dialog-title">Architecture de principe du démonstrateur Learnix</h2>
+          <button class="dialog-close" type="button" data-close-architecture aria-label="Fermer le schéma agrandi">
+            Fermer
+          </button>
+        </div>
+        <img src="assets/img/learnix-architecture.svg" alt="Schéma agrandi de l'architecture Learnix : utilisateur, interfaces, AnythingLLM, corpus, API ou modèle local, réponse.">
+      </dialog>
+
+      <section id="demarche" class="content-section section-anchor">
+        <div class="section-heading">
+          <p class="eyebrow">Positionnement</p>
+          <h2>Ce qui est partagé, ce qui reste privé</h2>
+          <p>
+            Learnix n'est pas publié comme service ouvert. Le dépôt rend visible le raisonnement, les
+            choix et les limites afin de transformer une expérimentation personnelle en ressource discutable.
+          </p>
+        </div>
+        <div class="feature-grid">
+          <article class="feature-card">
+            <span class="card-index">01</span>
+            <h3>Démontrer sans ouvrir</h3>
+            <p>Le bot et la clé API restent privés. Le public accède à la méthode, aux schémas, aux tests et aux points de vigilance.</p>
+          </article>
+          <article class="feature-card">
+            <span class="card-index">02</span>
+            <h3>Documenter les choix</h3>
+            <p>AnythingLLM, RAG, Telegram, API distante ou modèle local sont présentés comme des options de conception, pas comme des recettes magiques.</p>
+          </article>
+          <article class="feature-card">
+            <span class="card-index">03</span>
+            <h3>Évaluer les limites</h3>
+            <p>Les questions hors corpus, les synthèses partielles et la lisibilité Telegram deviennent des objets de test.</p>
+          </article>
+        </div>
+      </section>
+
+      <section id="addie" class="content-section section-anchor">
+        <div class="section-heading">
+          <p class="eyebrow">Ingénierie pédagogique</p>
+          <h2>Une démarche ADDIE pour cadrer le démonstrateur</h2>
+          <p>
+            Learnix n'est pas seulement un assemblage technique. Le projet est alimenté par une démarche
+            d'ingénierie pédagogique : analyser le besoin, concevoir l'usage, développer le corpus,
+            tester l'implémentation et évaluer les effets.
+          </p>
+        </div>
+        <ol class="addie-grid">
+          <li>
+            <strong>Analyse</strong>
+            <span>Identifier les besoins d'accompagnement, les publics, les contraintes et les usages de l'IA déjà présents.</span>
+          </li>
+          <li>
+            <strong>Design</strong>
+            <span>Définir les scénarios, les règles de réponse, les critères de qualité et la place de Learnix dans une médiation.</span>
+          </li>
+          <li>
+            <strong>Développement</strong>
+            <span>Constituer le corpus, configurer AnythingLLM, préparer l'invite, les tests et les supports de démonstration.</span>
+          </li>
+          <li>
+            <strong>Implémentation</strong>
+            <span>Installer le démonstrateur, le connecter à l'API et à Telegram privé, puis observer les usages réels.</span>
+          </li>
+          <li>
+            <strong>Évaluation</strong>
+            <span>Tester les réponses, les refus, les limites du RAG, la lisibilité et les conditions d'un pilote plus large.</span>
+          </li>
+        </ol>
+      </section>
+
+      <section id="architecture" class="content-section section-anchor band architecture-section">
+        <div class="section-heading">
+          <p class="eyebrow">Architecture</p>
+          <h2>Une chaîne RAG lisible et reproductible</h2>
+          <p>
+            Le modèle ne connaît pas directement les documents. AnythingLLM retrouve des extraits du corpus,
+            les transmet au modèle, puis Learnix formule une réponse contrainte par ce contexte.
+          </p>
+        </div>
+        <ol class="pipeline-list">
+          <li><strong>Importer</strong><span>PDF, DOCX et pages web sélectionnés.</span></li>
+          <li><strong>Indexer</strong><span>Extraction, fragments, embeddings et base vectorielle.</span></li>
+          <li><strong>Interroger</strong><span>Question en langage naturel depuis le web ou Telegram privé.</span></li>
+          <li><strong>Récupérer</strong><span>Recherche des fragments les plus pertinents.</span></li>
+          <li><strong>Répondre</strong><span>Génération avec consigne stricte et refus hors corpus.</span></li>
+        </ol>
+        <div class="explain-panel">
+          <h3>Ce que veut dire RAG</h3>
+          <p>
+            RAG signifie <strong>Retrieval-Augmented Generation</strong>, ou génération augmentée par recherche documentaire.
+            Le modèle ne répond pas seulement avec ses connaissances générales : AnythingLLM cherche d'abord les fragments
+            pertinents dans le corpus indexé, puis transmet ces extraits au modèle pour produire une réponse cadrée.
+          </p>
+        </div>
+      </section>
+
+      <section id="corpus" class="content-section section-anchor two-column">
+        <div>
+          <p class="eyebrow">Corpus</p>
+          <h2>La maîtrise documentaire est le vrai moteur de Learnix.</h2>
+          <p>
+            Le corpus doit être limité, propre, identifiable, actualisable et sans débordement. Un document
+            copié sur le serveur ne suffit pas : il doit être importé, rattaché au workspace et indexé pour être utilisable.
+          </p>
+          <a class="text-link" href="corpus/README.md" target="_blank" rel="noopener">Voir les principes de corpus</a>
+        </div>
+        <div class="check-panel">
+          <h3>Inventaire minimal</h3>
+          <ul class="check-list">
+            <li>Titre, auteur ou organisme, année.</li>
+            <li>Statut public, privé ou interne.</li>
+            <li>Licence et conditions de réutilisation.</li>
+            <li>Thème pédagogique principal.</li>
+            <li>Date d'import et qualité d'extraction.</li>
+            <li>Raison de l'inclusion dans Learnix.</li>
+          </ul>
+        </div>
+      </section>
+
+      <section id="reglages" class="content-section section-anchor band">
+        <div class="section-heading">
+          <p class="eyebrow">Paramétrage</p>
+          <h2>Le refus hors corpus se construit par un ensemble de réglages.</h2>
+          <p>
+            Une température basse aide, mais elle ne suffit pas. Le comportement documentaire dépend du mode
+            de requête, du seuil de similarité, du prompt système, de la phrase de refus et des tests.
+          </p>
+        </div>
+        <div class="settings-layout">
+          <article class="setting-item">
+            <h3>Mode Requête</h3>
+            <p>Choisi parmi Agent, Chat et Requête pour privilégier la recherche documentaire.</p>
+          </article>
+          <article class="setting-item">
+            <h3>Température 0</h3>
+            <p>Variation minimale pour renforcer la fidélité au contexte transmis.</p>
+          </article>
+          <article class="setting-item">
+            <h3>Accuracy Optimized</h3>
+            <p>Préférence de recherche orientée précision et pertinence des extraits.</p>
+          </article>
+          <article class="setting-item">
+            <h3>8 contextes</h3>
+            <p>Nombre maximum de contextes envoyés au modèle par chat ou requête.</p>
+          </article>
+          <article class="setting-item">
+            <h3>Similarité ≥ .50</h3>
+            <p>Seuil moyen pour limiter la récupération de fragments trop faibles.</p>
+          </article>
+          <article class="setting-item">
+            <h3>6128 vecteurs</h3>
+            <p>Base vectorielle observée dans l'espace de travail Learnix.</p>
+          </article>
+        </div>
+        <div class="explain-panel">
+          <h3>Ce qu'est la température</h3>
+          <p>
+            La température contrôle le niveau de variation ou de créativité du modèle. Plus elle est élevée, plus
+            le modèle peut produire des réponses différentes, exploratoires ou imprévisibles. Dans Learnix, elle
+            est fixée à <strong>0</strong> pour obtenir des réponses aussi stables que possible et réduire les
+            extrapolations hors corpus.
+          </p>
+        </div>
+        <details class="prompt-details" open>
+          <summary>Invite exacte utilisée dans AnythingLLM</summary>
+          <pre class="prompt-block"><code>Tu es Learnix, un assistant documentaire spécialisé en ingénierie pédagogique.
+
+Tu dois répondre exclusivement à partir du contexte documentaire fourni par AnythingLLM.
+
+Règles obligatoires :
+1. N’utilise jamais tes connaissances générales.
+2. Ne réponds jamais à partir de ta mémoire interne.
+3. Si aucun extrait documentaire pertinent n’est fourni dans le contexte, réponds exactement :
+“Je ne trouve pas cette information dans les documents de Learnix.”
+4. Si la question porte sur un sujet absent des documents, refuse de répondre avec la phrase ci-dessus.
+5. Mentionne les documents utilisés uniquement si leurs extraits sont présents dans le contexte.
+6. Réponds en français, de manière concise et structurée.
+
+Important : même si tu connais la réponse, tu ne dois pas la donner si elle n’est pas présente dans les documents fournis.
+
+Format de réponse :
+- Utilise un format compatible avec Telegram.
+- Privilégie le texte simple.
+- Utilise des paragraphes courts.
+- Utilise des listes à puces simples quand c’est utile.
+- N’utilise pas de tableaux.
+- N’utilise pas de titres Markdown avec #.
+- N’utilise pas de listes imbriquées.
+- N’utilise pas de blocs de code, sauf si l’utilisateur le demande explicitement.
+- Évite le gras, l’italique et les mises en forme complexes.
+- Limite les réponses à 6 puces maximum, sauf si l’utilisateur demande une réponse longue.
+- Si une réponse est complexe, commence par une synthèse courte, puis propose une structuration simple.
+
+Style :
+- Réponds comme un assistant pédagogique fiable, clair et utile.
+- Ne surinterprète pas les documents.
+- Signale clairement les limites du contexte documentaire.
+- Si plusieurs documents donnent des éléments complémentaires, distingue-les simplement.</code></pre>
+        </details>
+      </section>
+
+      <section id="telegram" class="content-section section-anchor two-column">
+        <div>
+          <p class="eyebrow">Telegram</p>
+          <h2>Pourquoi utiliser Telegram comme interface privée ?</h2>
+          <p>
+            Telegram sert d'interface légère et personnelle : Learnix reste hébergé côté AnythingLLM, la clé API
+            ne circule pas dans Telegram, et le bot permet d'interroger rapidement le corpus depuis un téléphone
+            ou un ordinateur. C'est utile pour une preuve de concept personnelle, pas pour un service institutionnel ouvert.
+          </p>
+          <a class="text-link" href="docs/telegram.md" target="_blank" rel="noopener">Lire la configuration Telegram</a>
+        </div>
+        <div class="check-panel">
+          <h3>Configuration du bot</h3>
+          <ul class="check-list">
+            <li>Créer un bot Telegram avec BotFather et récupérer le token du bot.</li>
+            <li>Renseigner ce token dans l'intégration Telegram d'AnythingLLM.</li>
+            <li>Associer le bot au workspace Learnix.</li>
+            <li>Activer la restriction d'usage du bot.</li>
+            <li>Autoriser uniquement le compte Telegram personnel.</li>
+            <li>Désactiver l'usage en groupes et éviter tout droit d'administration.</li>
+          </ul>
+        </div>
+      </section>
+
+      <section id="limites" class="content-section section-anchor band two-column">
+        <div>
+          <p class="eyebrow">Limites des IA grand public</p>
+          <h2>Pourquoi ne pas se contenter d'un GPT, d'un Gem ou d'un assistant généraliste dédié ?</h2>
+          <p>
+            Un assistant grand public, même personnalisé, reste souvent trop ouvert : il peut mobiliser ses
+            connaissances générales, produire une réponse plausible sans source claire, mélanger des éléments
+            hors corpus et donner une impression de maîtrise documentaire qu'on ne contrôle pas entièrement.
+          </p>
+        </div>
+        <div class="check-panel">
+          <h3>Ce que Learnix cherche à éviter</h3>
+          <ul class="check-list">
+            <li>Réponses plausibles mais non documentées.</li>
+            <li>Débordement hors corpus pédagogique.</li>
+            <li>Sources absentes, floues ou reconstituées.</li>
+            <li>Dépendance à une mémoire ou à des connaissances générales non vérifiables.</li>
+            <li>Confusion entre outil de médiation et autorité pédagogique.</li>
+            <li>Perte de maîtrise sur les documents réellement utilisés.</li>
+          </ul>
+        </div>
+      </section>
+
+      <section id="demo" class="content-section section-anchor">
+        <div class="section-heading">
+          <p class="eyebrow">Scénarios</p>
+          <h2>Trois tests pour présenter le démonstrateur</h2>
+          <p>
+            Ces scénarios permettent d'expliquer Learnix sans ouvrir le chatbot : on montre ce qu'il doit faire,
+            ce qu'il doit refuser et ce que l'on observe.
+          </p>
+        </div>
+        <div class="demo-tool">
+          <div class="scenario-tabs" role="tablist" aria-label="Scénarios de démonstration">
+            <button class="scenario-tab is-active" type="button" data-scenario="refus" aria-pressed="true">Hors corpus</button>
+            <button class="scenario-tab" type="button" data-scenario="simple" aria-pressed="false">Question simple</button>
+            <button class="scenario-tab" type="button" data-scenario="complexe" aria-pressed="false">Question complexe</button>
+          </div>
+          <div class="scenario-output" aria-live="polite">
+            <p class="output-label">Question</p>
+            <blockquote id="scenario-question"></blockquote>
+            <p class="output-label">Réponse attendue</p>
+            <div id="scenario-answer" class="answer-box"></div>
+            <p class="output-label">Ce que le scénario démontre</p>
+            <p id="scenario-note" class="scenario-note"></p>
+          </div>
+        </div>
+      </section>
+
+      <section id="trajectoire" class="content-section section-anchor two-column">
+        <div>
+          <p class="eyebrow">Passage à l'échelle</p>
+          <h2>Du démonstrateur personnel au pilote accompagné</h2>
+          <p>
+            Learnix peut servir de preuve d'usage. L'étape raisonnable n'est pas une ouverture large immédiate,
+            mais un pilote interne avec une équipe restreinte, un corpus gouverné et une évaluation explicite.
+          </p>
+        </div>
+        <ol class="timeline">
+          <li><strong>Phase 0</strong><span>Démonstrateur personnel privé.</span></li>
+          <li><strong>Phase 1</strong><span>Pilote interne au centre d'innovation pédagogique.</span></li>
+          <li><strong>Phase 2</strong><span>Bêta avec enseignants volontaires et accompagnés.</span></li>
+          <li><strong>Phase 3</strong><span>Service institutionnel, si la gouvernance suit.</span></li>
+        </ol>
+      </section>
+
+      <section id="soutenabilite" class="content-section section-anchor band two-column">
+        <div>
+          <p class="eyebrow">Impact et changement d'échelle</p>
+          <h2>De l'API AMUE au modèle local : une question technique, écologique et institutionnelle</h2>
+          <p>
+            Le démonstrateur utilise aujourd'hui une API mise à disposition dans le cadre de l'accord-cadre
+            avec l'AMUE. C'est adapté pour prouver l'usage rapidement, mais ce n'est pas une solution que
+            l'on peut qualifier de sobre par principe. Si Learnix devait changer d'échelle, il faudrait
+            discuter l'empreinte, la dépendance à un service distant et la possibilité d'une infrastructure
+            locale ou institutionnelle maîtrisée.
+          </p>
+        </div>
+        <div class="check-panel">
+          <h3>Point de vigilance</h3>
+          <p>
+            Viser un LLM local ne veut pas forcément dire réentraîner entièrement un modèle. Dans une approche
+            RAG, le modèle peut rester général tandis que le corpus est local, indexé et strictement maîtrisé.
+            Un fine-tuning ou un entraînement spécifique serait un autre changement d'échelle, plus coûteux,
+            à évaluer sur les plans technique, écologique et pédagogique.
+          </p>
+        </div>
+      </section>
+
+      <section id="vigilance" class="content-section section-anchor warning-band">
+        <div class="section-heading compact">
+          <p class="eyebrow">Vigilance</p>
+          <h2>Ce qui conditionne toute ouverture collective</h2>
+        </div>
+        <div class="warning-grid">
+          <p>Pas de données étudiantes nominatives, de copies, de données RH ou sensibles dans le démonstrateur personnel.</p>
+          <p>Une clé API personnelle ne doit pas devenir l'infrastructure d'un service collectif.</p>
+          <p>Un passage à l'échelle suppose authentification, droits, charte d'usage, support, maintenance et cadrage RGPD.</p>
+        </div>
+      </section>
+    </main>
+
+    <footer class="app-footer">
+      <p><strong>Learnix</strong> · Démonstrateur pédagogique documenté · Contenus originaux sous CC0.</p>
+      <div class="footer-links">
+        <a href="README.md" target="_blank" rel="noopener">README</a>
+        <a href="LICENSE.md" target="_blank" rel="noopener">Licence</a>
+        <a href="docs/index.md" target="_blank" rel="noopener">Docs</a>
+      </div>
+    </footer>
+
+    <script src="assets/js/app.js"></script>
+  </body>
+</html>
