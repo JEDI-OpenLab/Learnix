@@ -49,7 +49,7 @@ tabs.forEach((tab) => {
 renderScenario("refus");
 
 const internalDocumentTargets = {
-  "README.md": "#documentation-depot",
+  "README.md": "#documentation",
   "LICENSE.md": "#documentation-licence",
   "docs/index.md": "#documentation",
   "docs/demarche.md": "#documentation-demarche",

@@ -11,7 +11,7 @@
     <meta property="og:image" content="assets/img/learnix.png">
     <link rel="icon" href="assets/img/favicon.png" type="image/png">
     <link rel="apple-touch-icon" href="assets/img/learnix.png">
-    <link rel="stylesheet" href="assets/css/styles.css?v=2026-05-23.3">
+    <link rel="stylesheet" href="assets/css/styles.css?v=2026-05-23.4">
   </head>
   <body>
     <a class="skip-link" href="#contenu">Aller au contenu</a>
@@ -35,7 +35,7 @@
         <a href="#limites">Limites</a>
         <a href="#demo">Tests</a>
         <a href="#soutenabilite">Impact</a>
-        <a href="#documentation">Docs</a>
+        <a href="#documentation">Repères</a>
         <a href="https://jedi-openlab.github.io/jedi/" target="_blank" rel="noopener">JEDI OpenLab</a>
       </nav>
     </header>
@@ -47,7 +47,7 @@
           <h1>Learnix est un assistant documentaire en ingénierie pédagogique.</h1>
           <p class="lead">
             Il interroge un corpus pédagogique choisi et indexé, afin de répondre à partir de documents
-            maîtrisés plutôt qu'à partir d'une IA généraliste. Le chatbot fonctionne en privé ; cette webapp
+            maîtrisés plutôt qu'à partir d'une IA généraliste. L'expérience reste privée ; cette page
             présente la démarche, les réglages, les limites et les conditions d'un éventuel changement d'échelle.
           </p>
           <div class="intro-actions" aria-label="Actions principales">
@@ -57,7 +57,7 @@
             </a>
             <a class="button secondary" href="#documentation">
               <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 3h9l3 3v15H6zM14 3v4h4"/></svg>
-              Lire la documentation
+              Explorer les repères
             </a>
           </div>
           <dl class="status-grid" aria-label="État du démonstrateur">
@@ -101,9 +101,9 @@
       <section id="demarche" class="content-section section-anchor">
         <div class="section-heading">
           <p class="eyebrow">Positionnement</p>
-          <h2>Ce qui est partagé, ce qui reste privé</h2>
+          <h2>Un assistant privé, une démarche partageable</h2>
           <p>
-            Learnix n'est pas publié comme service ouvert. Le dépôt rend visible le raisonnement, les
+            Learnix n'est pas un service ouvert. La présentation rend visibles le raisonnement, les
             choix et les limites afin de transformer une expérimentation personnelle en ressource discutable.
           </p>
         </div>
@@ -111,7 +111,7 @@
           <article class="feature-card">
             <span class="card-index">01</span>
             <h3>Démontrer sans ouvrir</h3>
-            <p>Le bot et la clé API restent privés. Le public accède à la méthode, aux schémas, aux tests et aux points de vigilance.</p>
+            <p>Le bot et la clé API restent privés. La méthode, les schémas, les tests et les points de vigilance sont présentés.</p>
           </article>
           <article class="feature-card">
             <span class="card-index">02</span>
@@ -191,11 +191,11 @@
           <p class="eyebrow">Méthode d'installation</p>
           <h2>Une installation reproductible, sans publier le chatbot</h2>
           <p>
-            Documenter l'installation est utile : cela rend le démonstrateur vérifiable, explicite les choix
-            techniques et évite de confondre Learnix avec un simple compte IA personnalisé. AnythingLLM a été
-            retenu pour cette preuve de concept, mais d'autres outils RAG existent.
+            L'installation suit une chaîne simple : choisir un outil RAG, connecter un modèle, créer un
+            workspace documentaire, régler le comportement de réponse et brancher l'interface Telegram privée.
+            AnythingLLM a été retenu pour cette preuve de concept, mais d'autres outils RAG existent.
           </p>
-          <a class="text-link" href="#documentation-installation">Lire la procédure intégrée</a>
+          <a class="text-link" href="#documentation-installation">Voir les étapes d'installation</a>
         </div>
         <ol class="method-list">
           <li>
@@ -457,11 +457,11 @@ Style :
 
       <section id="documentation" class="content-section section-anchor">
         <div class="section-heading">
-          <p class="eyebrow">Documentation intégrée</p>
-          <h2>Les fiches utiles sans quitter la webapp</h2>
+          <p class="eyebrow">Repères</p>
+          <h2>Les points clés du démonstrateur</h2>
           <p>
-            Les fichiers Markdown restent disponibles dans le dépôt, mais les éléments nécessaires à la présentation
-            sont repris ici pour éviter d'ouvrir du texte brut dans un nouvel onglet.
+            Ces repères rassemblent les choix pédagogiques, techniques et méthodologiques qui permettent
+            de comprendre Learnix sans accéder au chatbot privé.
           </p>
         </div>
         <div class="doc-grid">
@@ -503,13 +503,13 @@ Style :
             <summary>Mini-procédure d'installation</summary>
             <div class="doc-panel-body">
               <p>
-                La procédure décrit le chemin réellement suivi, sans publier la clé API, le bot privé ou les
-                documents non diffusables. Elle sert à rendre la démarche reproductible et discutable.
+                La procédure présente les étapes de mise en place, sans exposer la clé API, le bot privé ou les
+                documents non diffusables. Elle rend la démarche reproductible et discutable.
               </p>
               <ul class="check-list">
                 <li>Choisir un outil RAG : AnythingLLM ici, avec d'autres options possibles selon les besoins.</li>
                 <li>Installer AnythingLLM et créer un workspace Learnix réservé au démonstrateur.</li>
-                <li>Renseigner la clé API dans AnythingLLM, sans la copier dans le dépôt.</li>
+                <li>Renseigner la clé API dans AnythingLLM, sans la diffuser.</li>
                 <li>Importer une base documentaire propre, vérifier l'extraction puis indexer les documents.</li>
                 <li>Configurer le mode Requête, la température 0, la phrase de refus et les seuils de recherche.</li>
                 <li>Créer le bot Telegram avec BotFather, renseigner son token, scanner le QR code AnythingLLM et restreindre l'usage au compte personnel.</li>
@@ -623,28 +623,11 @@ Style :
             </div>
           </details>
 
-          <details class="doc-panel" id="documentation-depot">
-            <summary>Dépôt et périmètre publié</summary>
-            <div class="doc-panel-body">
-              <p>
-                Le dépôt présente la démarche sans publier le chatbot, les clés, les données d'installation
-                personnelles ou les documents non diffusables. Il sert à rendre le démonstrateur compréhensible,
-                discutable et réutilisable comme méthode.
-              </p>
-              <ul class="check-list">
-                <li>Webapp statique publiable via GitHub Pages.</li>
-                <li>Documentation de la démarche ADDIE, du RAG, des réglages et des limites.</li>
-                <li>Fiches de scénarios, grille de tests et modèle de manifeste de corpus.</li>
-                <li>Pas d'ouverture publique du bot Learnix.</li>
-              </ul>
-            </div>
-          </details>
-
           <details class="doc-panel" id="documentation-licence">
             <summary>Licence</summary>
             <div class="doc-panel-body">
               <p>
-                Les contenus originaux du dépôt sont placés sous CC0 1.0 Universal, dans l'esprit le plus
+                Les contenus originaux de Learnix sont placés sous CC0 1.0 Universal, dans l'esprit le plus
                 permissif possible. Les logiciels, services tiers, corpus importés et ressources citées
                 conservent leurs droits propres.
               </p>
@@ -663,10 +646,10 @@ Style :
           </svg>
           <span><strong>JEDI-OpenLab</strong> · Pédagogie ouverte, conçue avec soin.</span>
         </span>
-        <span class="footer-version">Version éditoriale 2026-05-22.1</span>
+        <span class="footer-version">Version éditoriale 2026-05-23.1</span>
       </div>
     </footer>
 
-    <script src="assets/js/app.js?v=2026-05-23.3"></script>
+    <script src="assets/js/app.js?v=2026-05-23.4"></script>
   </body>
 </html>
