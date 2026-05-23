@@ -11,7 +11,7 @@
     <meta property="og:image" content="assets/img/learnix.png">
     <link rel="icon" href="assets/img/favicon.png" type="image/png">
     <link rel="apple-touch-icon" href="assets/img/learnix.png">
-    <link rel="stylesheet" href="assets/css/styles.css?v=2026-05-23.1">
+    <link rel="stylesheet" href="assets/css/styles.css?v=2026-05-23.3">
   </head>
   <body>
     <a class="skip-link" href="#contenu">Aller au contenu</a>
@@ -28,6 +28,7 @@
         <a href="#demarche">Démarche</a>
         <a href="#addie">ADDIE</a>
         <a href="#architecture">Architecture</a>
+        <a href="#installation">Installation</a>
         <a href="#corpus">Corpus</a>
         <a href="#reglages">Réglages</a>
         <a href="#telegram">Telegram</a>
@@ -185,6 +186,45 @@
         </div>
       </section>
 
+      <section id="installation" class="content-section section-anchor two-column">
+        <div>
+          <p class="eyebrow">Méthode d'installation</p>
+          <h2>Une installation reproductible, sans publier le chatbot</h2>
+          <p>
+            Documenter l'installation est utile : cela rend le démonstrateur vérifiable, explicite les choix
+            techniques et évite de confondre Learnix avec un simple compte IA personnalisé. AnythingLLM a été
+            retenu pour cette preuve de concept, mais d'autres outils RAG existent.
+          </p>
+          <a class="text-link" href="#documentation-installation">Lire la procédure intégrée</a>
+        </div>
+        <ol class="method-list">
+          <li>
+            <strong>Choisir le socle</strong>
+            <span>AnythingLLM a été choisi pour créer un workspace documentaire, indexer un corpus et connecter une API ou un modèle local. Des alternatives comme Dify, Open WebUI, Flowise, LangChain ou LlamaIndex pourraient être étudiées selon le contexte.</span>
+          </li>
+          <li>
+            <strong>Installer et sécuriser</strong>
+            <span>Installer AnythingLLM sur la machine ou le serveur retenu, garder l'administration privée et ne publier ni instance, ni clé, ni documents non diffusables.</span>
+          </li>
+          <li>
+            <strong>Connecter le modèle</strong>
+            <span>Renseigner la clé API disponible dans le cadre de l'accord-cadre AMUE, ou préparer un modèle local si l'infrastructure le permet.</span>
+          </li>
+          <li>
+            <strong>Créer le workspace</strong>
+            <span>Créer l'espace Learnix, importer les documents, vérifier l'extraction, puis indexer le corpus dans la base vectorielle.</span>
+          </li>
+          <li>
+            <strong>Régler le comportement</strong>
+            <span>Passer le mode en Requête, fixer la température à 0, définir la phrase de refus, régler la recherche et tester les questions hors corpus.</span>
+          </li>
+          <li>
+            <strong>Brancher Telegram</strong>
+            <span>Créer le bot avec BotFather, renseigner le token dans AnythingLLM, scanner le QR code affiché pour l'appairage Telegram, puis limiter l'usage au compte personnel.</span>
+          </li>
+        </ol>
+      </section>
+
       <section id="corpus" class="content-section section-anchor two-column">
         <div>
           <p class="eyebrow">Corpus</p>
@@ -306,9 +346,9 @@ Style :
           <ul class="check-list">
             <li>Créer un bot Telegram avec BotFather et récupérer le token du bot.</li>
             <li>Renseigner ce token dans l'intégration Telegram d'AnythingLLM.</li>
+            <li>Scanner le QR code affiché par AnythingLLM pour l'appairage Telegram.</li>
             <li>Associer le bot au workspace Learnix.</li>
-            <li>Activer la restriction d'usage du bot.</li>
-            <li>Autoriser uniquement le compte Telegram personnel.</li>
+            <li>Activer la restriction d'usage et autoriser uniquement le compte personnel.</li>
             <li>Désactiver l'usage en groupes et éviter tout droit d'administration.</li>
           </ul>
         </div>
@@ -459,6 +499,24 @@ Style :
             </div>
           </details>
 
+          <details class="doc-panel" id="documentation-installation">
+            <summary>Mini-procédure d'installation</summary>
+            <div class="doc-panel-body">
+              <p>
+                La procédure décrit le chemin réellement suivi, sans publier la clé API, le bot privé ou les
+                documents non diffusables. Elle sert à rendre la démarche reproductible et discutable.
+              </p>
+              <ul class="check-list">
+                <li>Choisir un outil RAG : AnythingLLM ici, avec d'autres options possibles selon les besoins.</li>
+                <li>Installer AnythingLLM et créer un workspace Learnix réservé au démonstrateur.</li>
+                <li>Renseigner la clé API dans AnythingLLM, sans la copier dans le dépôt.</li>
+                <li>Importer une base documentaire propre, vérifier l'extraction puis indexer les documents.</li>
+                <li>Configurer le mode Requête, la température 0, la phrase de refus et les seuils de recherche.</li>
+                <li>Créer le bot Telegram avec BotFather, renseigner son token, scanner le QR code AnythingLLM et restreindre l'usage au compte personnel.</li>
+              </ul>
+            </div>
+          </details>
+
           <details class="doc-panel" id="documentation-corpus" open>
             <summary>Principes de corpus</summary>
             <div class="doc-panel-body">
@@ -504,6 +562,7 @@ Style :
               <ul class="check-list">
                 <li>Créer un bot avec BotFather et récupérer son token.</li>
                 <li>Renseigner le token dans l'intégration Telegram d'AnythingLLM.</li>
+                <li>Scanner le QR code affiché par AnythingLLM pour l'appairage Telegram.</li>
                 <li>Associer le bot au workspace Learnix.</li>
                 <li>Restreindre l'usage au compte Telegram personnel.</li>
                 <li>Désactiver l'usage en groupes et éviter tout droit d'administration.</li>
@@ -608,6 +667,6 @@ Style :
       </div>
     </footer>
 
-    <script src="assets/js/app.js?v=2026-05-23.1"></script>
+    <script src="assets/js/app.js?v=2026-05-23.3"></script>
   </body>
 </html>

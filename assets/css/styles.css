@@ -150,6 +150,19 @@ a:hover {
   margin: 0 auto;
 }
 
+.intro-section > *,
+.two-column > *,
+.feature-grid > *,
+.settings-layout > *,
+.warning-grid > *,
+.addie-grid > *,
+.pipeline-list > *,
+.method-list > *,
+.doc-grid > *,
+.demo-tool > * {
+  min-width: 0;
+}
+
 .intro-copy h1,
 .section-heading h2,
 .two-column h2 {
@@ -753,6 +766,48 @@ blockquote {
   margin: 0;
 }
 
+.method-list {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 0.75rem;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.method-list li {
+  min-height: 150px;
+  padding: 1rem;
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+}
+
+.method-list li:nth-child(1),
+.method-list li:nth-child(4) {
+  border-top: 4px solid var(--blue);
+}
+
+.method-list li:nth-child(2),
+.method-list li:nth-child(5) {
+  border-top: 4px solid var(--teal);
+}
+
+.method-list li:nth-child(3),
+.method-list li:nth-child(6) {
+  border-top: 4px solid var(--amber);
+}
+
+.method-list strong,
+.method-list span {
+  display: block;
+}
+
+.method-list span {
+  color: var(--muted);
+  margin-top: 0.45rem;
+}
+
 .timeline li {
   padding: 1rem;
   background: var(--surface);
@@ -879,6 +934,7 @@ blockquote {
   .status-grid,
   .feature-grid,
   .settings-layout,
+  .method-list,
   .doc-grid,
   .warning-grid {
     grid-template-columns: repeat(2, minmax(0, 1fr));
@@ -901,7 +957,11 @@ blockquote {
   }
 
   .intro-copy h1 {
-    font-size: 2.1rem;
+    font-size: 1.85rem;
+  }
+
+  .lead {
+    font-size: 1.02rem;
   }
 
   .section-heading h2,
@@ -909,10 +969,20 @@ blockquote {
     font-size: 1.85rem;
   }
 
+  .intro-actions {
+    align-items: stretch;
+    flex-direction: column;
+  }
+
+  .button {
+    width: 100%;
+  }
+
   .status-grid,
   .feature-grid,
   .addie-grid,
   .settings-layout,
+  .method-list,
   .doc-grid,
   .warning-grid {
     grid-template-columns: 1fr;

@@ -54,6 +54,7 @@ const internalDocumentTargets = {
   "docs/index.md": "#documentation",
   "docs/demarche.md": "#documentation-demarche",
   "docs/architecture.md": "#documentation-architecture",
+  "docs/installation.md": "#documentation-installation",
   "docs/corpus.md": "#documentation-corpus",
   "corpus/README.md": "#documentation-corpus",
   "docs/parametrage.md": "#documentation-parametrage",

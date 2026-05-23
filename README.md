@@ -53,6 +53,7 @@ learnix/
 
 - [Démarche](docs/demarche.md)
 - [Architecture](docs/architecture.md)
+- [Installation](docs/installation.md) : choix d'AnythingLLM, clé API, workspace, corpus et bot Telegram privé.
 - [Corpus documentaire](docs/corpus.md)
 - [Paramétrage RAG](docs/parametrage.md) : mode `Requête`, invite exacte, refus, température `0`, base vectorielle.
 - [Telegram](docs/telegram.md) : rôle du bot privé, configuration et limites.

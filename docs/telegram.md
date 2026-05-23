@@ -34,11 +34,12 @@ Ce choix est adapté à une preuve de concept personnelle. Il ne suffit pas pour
 1. Créer un bot Telegram avec `BotFather`.
 2. Récupérer le token du bot.
 3. Renseigner le token dans l'intégration Telegram d'AnythingLLM.
-4. Associer le bot au workspace `Learnix`.
-5. Activer la restriction d'usage du bot.
-6. Autoriser uniquement le compte Telegram personnel.
-7. Désactiver l'usage en groupes.
-8. Éviter tout droit d'administration inutile.
+4. Scanner le QR code affiché par AnythingLLM pour l'appairage Telegram.
+5. Associer le bot au workspace `Learnix`.
+6. Activer la restriction d'usage du bot.
+7. Autoriser uniquement le compte Telegram personnel.
+8. Désactiver l'usage en groupes.
+9. Éviter tout droit d'administration inutile.
 
 ## Réglages de sécurité
 
