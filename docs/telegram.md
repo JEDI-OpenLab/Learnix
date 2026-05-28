@@ -10,7 +10,7 @@ Telegram
 → AnythingLLM
 → workspace Learnix
 → corpus indexé
-→ modèle via API ou modèle local
+→ mistral-small-4-119b via API
 → réponse dans Telegram
 ```
 

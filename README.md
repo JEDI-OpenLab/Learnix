@@ -2,7 +2,7 @@
 
 **Assistant documentaire et démonstrateur pédagogique pour explorer les usages raisonnés de l'IA générative dans l'enseignement supérieur.**
 
-Learnix est une preuve de concept personnelle : un assistant documentaire spécialisé en ingénierie pédagogique, construit avec AnythingLLM, une base documentaire maîtrisée et un modèle interrogé via API compatible OpenAI.
+Learnix est une preuve de concept personnelle : un assistant documentaire spécialisé en ingénierie pédagogique, construit avec AnythingLLM, une base documentaire maîtrisée et le modèle `mistral-small-4-119b` interrogé via API distante.
 
 Le chatbot n'est pas mis à disposition du public. Le dépôt sert à documenter la démarche : choix techniques, constitution du corpus, paramétrage RAG, tests de fiabilité, limites et scénarios de passage à l'échelle.
 
@@ -23,7 +23,7 @@ Le démonstrateur existe et fonctionne en usage personnel :
 
 - AnythingLLM est installé sur un serveur local ;
 - un workspace Learnix contient des documents pédagogiques sélectionnés ;
-- l'assistant utilise une API distante compatible OpenAI ;
+- l'assistant utilise le modèle `mistral-small-4-119b` via API distante ;
 - une interface web AnythingLLM et un bot Telegram privé permettent de l'interroger ;
 - les réglages cherchent à limiter les réponses hors corpus.
 

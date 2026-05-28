@@ -960,6 +960,13 @@ blockquote {
     font-size: 1.85rem;
   }
 
+  .intro-copy,
+  .intro-copy h1,
+  .lead,
+  .intro-actions {
+    max-width: calc(100vw - 2rem);
+  }
+
   .lead {
     font-size: 1.02rem;
   }

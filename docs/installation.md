@@ -10,7 +10,7 @@ Learnix a été construit avec AnythingLLM parce que l'outil permet de :
 
 - créer un workspace documentaire ;
 - importer et indexer un corpus ;
-- connecter un fournisseur de modèle via clé API ;
+- connecter le modèle `mistral-small-4-119b` via clé API ;
 - régler le comportement de recherche ;
 - exposer une interface web ;
 - connecter Telegram pour un usage privé.
@@ -31,12 +31,13 @@ Principes retenus :
 
 ## 3. Connecter le modèle
 
-Le démonstrateur actuel utilise une API distante compatible OpenAI, mise à disposition dans le cadre de l'accord-cadre avec l'AMUE.
+Le démonstrateur actuel utilise le modèle `mistral-small-4-119b` via une API distante mise à disposition dans le cadre de l'accord-cadre avec l'AMUE.
 
 Étapes de principe :
 
 - créer ou récupérer la clé API autorisée ;
 - renseigner la clé dans les réglages modèle d'AnythingLLM ;
+- sélectionner `mistral-small-4-119b` comme modèle appelé par Learnix ;
 - vérifier que le fournisseur répond correctement ;
 - ne jamais copier la clé dans le dépôt GitHub ;
 - documenter seulement le principe d'usage, pas la valeur de la clé.
@@ -69,6 +70,7 @@ Réglages documentés :
 
 - mode de chat : `Requête` ;
 - options disponibles : `Agent`, `Chat`, `Requête` ;
+- modèle : `mistral-small-4-119b` ;
 - réponse de refus : `Je ne trouve pas cette information dans les documents de Learnix.` ;
 - température LLM : `0` ;
 - search preference : `Accuracy Optimized` ;

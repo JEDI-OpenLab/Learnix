@@ -42,8 +42,8 @@
 
     <rect x="925" y="160" width="220" height="128" rx="10" fill="#f2ded8" stroke="#c85f4a" stroke-width="3"/>
     <text x="1035" y="205" text-anchor="middle" class="box-title">Modèle</text>
-    <text x="1035" y="240" text-anchor="middle" class="box-text">API distante</text>
-    <text x="1035" y="266" text-anchor="middle" class="box-text">ou modèle local</text>
+    <text x="1035" y="240" text-anchor="middle" class="box-text">mistral-small-4-119b</text>
+    <text x="1035" y="266" text-anchor="middle" class="box-text">API distante</text>
 
     <rect x="95" y="455" width="265" height="150" rx="10" fill="#fff5dd" stroke="#d49a26" stroke-width="3"/>
     <text x="228" y="503" text-anchor="middle" class="box-title">Corpus</text>

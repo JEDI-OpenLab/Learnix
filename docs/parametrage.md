@@ -8,6 +8,7 @@ Réglages appliqués dans le workspace Learnix :
 
 - mode de chat : `Requête` ;
 - options disponibles dans AnythingLLM : `Agent`, `Chat`, `Requête` ;
+- modèle : `mistral-small-4-119b` ;
 - invite de workspace : invite stricte Learnix, reproduite ci-dessous ;
 - réponse de refus en mode requête : `Je ne trouve pas cette information dans les documents de Learnix.` ;
 - température LLM : `0` ;

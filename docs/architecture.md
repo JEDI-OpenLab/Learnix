@@ -8,8 +8,8 @@ Utilisateur
 → AnythingLLM
 → workspace Learnix
 → documents indexés
-→ API compatible OpenAI
-→ modèle distant ou local
+→ API distante
+→ mistral-small-4-119b
 → réponse documentée
 ```
 
@@ -35,9 +35,9 @@ AnythingLLM a été retenu pour le démonstrateur parce qu'il permet de :
 - connecter un fournisseur de modèle compatible OpenAI ;
 - tester rapidement des réglages RAG.
 
-## Modèle distant ou modèle local
+## Modèle actuel et option locale
 
-Le démonstrateur actuel utilise une API distante compatible OpenAI, mise à disposition dans le cadre de l'accord-cadre avec l'AMUE. Ce choix évite d'installer un modèle lourd localement et permet de faire tourner le dispositif sur une machine modeste.
+Le démonstrateur actuel utilise le modèle `mistral-small-4-119b` via une API distante mise à disposition dans le cadre de l'accord-cadre avec l'AMUE. Ce choix évite d'installer un modèle lourd localement et permet de faire tourner le dispositif sur une machine modeste.
 
 Un modèle local pourrait toutefois être envisagé pour certains usages :
 
