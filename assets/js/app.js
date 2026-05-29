@@ -48,6 +48,33 @@ tabs.forEach((tab) => {
 
 renderScenario("refus");
 
+const menuToggle = document.querySelector("[data-menu-toggle]");
+const mainNav = document.querySelector("#main-nav");
+
+function setMenuOpen(isOpen) {
+  if (!menuToggle || !mainNav) return;
+
+  menuToggle.setAttribute("aria-expanded", String(isOpen));
+  mainNav.classList.toggle("is-open", isOpen);
+}
+
+if (menuToggle && mainNav) {
+  menuToggle.addEventListener("click", () => {
+    const isOpen = menuToggle.getAttribute("aria-expanded") === "true";
+    setMenuOpen(!isOpen);
+  });
+
+  mainNav.querySelectorAll("a").forEach((link) => {
+    link.addEventListener("click", () => setMenuOpen(false));
+  });
+
+  document.addEventListener("keydown", (event) => {
+    if (event.key === "Escape") {
+      setMenuOpen(false);
+    }
+  });
+}
+
 const internalDocumentTargets = {
   "README.md": "#documentation",
   "LICENSE.md": "#documentation-licence",

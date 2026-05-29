@@ -11,7 +11,7 @@
     <meta property="og:image" content="assets/img/learnix.png">
     <link rel="icon" href="assets/img/favicon.png" type="image/png">
     <link rel="apple-touch-icon" href="assets/img/learnix.png">
-    <link rel="stylesheet" href="assets/css/styles.css?v=2026-05-28.2">
+    <link rel="stylesheet" href="assets/css/styles.css?v=2026-05-29.1">
   </head>
   <body>
     <a class="skip-link" href="#contenu">Aller au contenu</a>
@@ -24,19 +24,30 @@
           <small>assistant documentaire pédagogique</small>
         </span>
       </a>
-      <nav class="main-nav" aria-label="Navigation principale">
-        <a href="#demarche">Démarche</a>
-        <a href="#addie">ADDIE</a>
-        <a href="#architecture">Architecture</a>
-        <a href="#installation">Installation</a>
-        <a href="#corpus">Corpus</a>
-        <a href="#reglages">Réglages</a>
-        <a href="#telegram">Telegram</a>
-        <a href="#limites">Limites</a>
-        <a href="#demo">Tests</a>
-        <a href="#soutenabilite">Impact</a>
-        <a href="#documentation">Repères</a>
-        <a href="https://jedi-openlab.github.io/jedi/" target="_blank" rel="noopener">JEDI OpenLab</a>
+      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="main-nav" data-menu-toggle>
+        <svg viewBox="0 0 24 24" aria-hidden="true">
+          <path d="M4 7h16M4 12h16M4 17h16"/>
+        </svg>
+        Menu
+      </button>
+      <nav class="main-nav" id="main-nav" aria-label="Navigation principale">
+        <div class="nav-primary">
+          <a href="#demarche">Démarche</a>
+          <a href="#architecture">Architecture</a>
+          <a href="#installation">Méthode</a>
+          <a href="#demo">Évaluation</a>
+          <a href="#documentation">Repères</a>
+          <a href="https://jedi-openlab.github.io/jedi/" target="_blank" rel="noopener">JEDI OpenLab</a>
+        </div>
+        <div class="nav-secondary" aria-label="Accès détaillés">
+          <span class="nav-section-label">Accès détaillés</span>
+          <a href="#addie">ADDIE</a>
+          <a href="#corpus">Corpus</a>
+          <a href="#reglages">Réglages</a>
+          <a href="#telegram">Telegram</a>
+          <a href="#limites">Limites</a>
+          <a href="#soutenabilite">Impact</a>
+        </div>
       </nav>
     </header>
 
@@ -651,10 +662,10 @@ Style :
           </svg>
           <span><strong>JEDI-OpenLab</strong> · Pédagogie ouverte, conçue avec soin.</span>
         </span>
-        <span class="footer-version">Version éditoriale 2026-05-28.2</span>
+        <span class="footer-version">Version éditoriale 2026-05-29.1</span>
       </div>
     </footer>
 
-    <script src="assets/js/app.js?v=2026-05-28.2"></script>
+    <script src="assets/js/app.js?v=2026-05-29.1"></script>
   </body>
 </html>
