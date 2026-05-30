@@ -70,6 +70,6 @@ learnix/
 
 ## Licence
 
-Le projet est distribué sous [licence MIT](LICENSE.md).
+Learnix est une ressource éducative libre (REL) au sens de la Recommandation UNESCO de 2019. Sauf mention contraire, les contenus originaux sont placés sous [Creative Commons Attribution 4.0 International — CC BY 4.0](LICENSE.md).
 
-Les logiciels, services tiers, corpus importés et ressources citées conservent leurs droits propres.
+Les contenus tiers, logiciels, services, corpus importés et ressources citées conservent leurs droits et licences propres.
