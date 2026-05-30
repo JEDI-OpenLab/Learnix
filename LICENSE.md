@@ -1,9 +1,21 @@
-# CC0 1.0 Universal
+MIT License
 
-Sauf mention contraire, les contenus, documents, exemples, fichiers web et ressources originales du projet Learnix sont places sous **CC0 1.0 Universal**.
+Copyright (c) 2026 JEDI-OpenLab
 
-Cela signifie que l'auteur renonce, dans toute la mesure permise par la loi, a ses droits patrimoniaux sur ces contenus afin qu'ils puissent etre copies, adaptes, reutilises, republies et transformes sans demander d'autorisation.
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
 
-Texte officiel : <https://creativecommons.org/publicdomain/zero/1.0/deed.fr>
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
 
-Les marques, logiciels, services tiers, documents sources importes dans le corpus et ressources citees restent soumis a leurs licences et droits respectifs.
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.

@@ -70,6 +70,6 @@ learnix/
 
 ## Licence
 
-Les contenus originaux du dépôt sont placés sous [CC0 1.0 Universal](LICENSE.md), dans l'esprit le plus permissif possible.
+Le projet est distribué sous [licence MIT](LICENSE.md).
 
 Les logiciels, services tiers, corpus importés et ressources citées conservent leurs droits propres.
