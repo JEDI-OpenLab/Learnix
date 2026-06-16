@@ -161,5 +161,5 @@
   <text x="100" y="717" class="ac-legend">Ajout manuel : vous alimentez le corpus directement.</text>
   <line x1="60" y1="744" x2="92" y2="744" stroke="#315f8d" stroke-width="5" stroke-linecap="round"/>
   <text x="100" y="749" class="ac-legend">Synchronisation Moodle : chaque nuit, le script interroge Moodle (web services REST, lecture seule), puis valide avant import.</text>
-  <text x="60" y="781" class="ac-legend" fill="#8a97a0">Le script ne lit que des contenus pédagogiques : ni notes, ni inscriptions, ni données personnelles d'étudiants.</text>
+  <text x="60" y="781" class="ac-legend" fill="#5b6872">Le script ne lit que des contenus pédagogiques : ni notes, ni inscriptions, ni données personnelles d'étudiants.</text>
 </svg>
