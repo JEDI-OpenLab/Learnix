@@ -200,7 +200,7 @@ a:hover {
 .nav-section-label {
   color: var(--teal);
   font-size: 0.74rem;
-  font-weight: 900;
+  font-weight: 700;
   text-transform: uppercase;
 }
 
@@ -574,7 +574,7 @@ a:hover {
 .card-index {
   color: var(--coral-dark);
   font-size: 0.78rem;
-  font-weight: 900;
+  font-weight: 700;
 }
 
 .feature-card h3,
@@ -754,7 +754,7 @@ a:hover {
 .doc-panel summary {
   cursor: pointer;
   padding: 1rem 1.1rem;
-  font-weight: 900;
+  font-weight: 800;
   color: var(--ink);
 }
 
@@ -824,7 +824,7 @@ a:hover {
   margin: 0 0 0.35rem;
   color: var(--teal);
   font-size: 0.76rem;
-  font-weight: 900;
+  font-weight: 700;
   text-transform: uppercase;
 }
 

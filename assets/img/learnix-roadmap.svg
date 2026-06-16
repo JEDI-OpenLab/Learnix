@@ -16,13 +16,13 @@
       .rm-subtitle { font: 400 16px Arial, sans-serif; fill: #5b6872; }
       .rm-label { font: 700 14px Arial, sans-serif; letter-spacing: 0.06em; }
       .rm-box-title { font: 700 21px Arial, sans-serif; fill: #172a3a; }
-      .rm-box-text { font: 400 16px Arial, sans-serif; fill: #4f5b66; }
+      .rm-box-text { font: 400 15.5px Arial, sans-serif; fill: #4f5b66; }
       .rm-badge { font: 700 13px Arial, sans-serif; letter-spacing: 0.04em; }
       .rm-caption { font: 400 15px Arial, sans-serif; fill: #5b6872; }
     </style>
   </defs>
 
-  <rect x="10" y="10" width="1180" height="700" rx="24" fill="#f7f6f1"/>
+  <rect x="0" y="0" width="1200" height="720" rx="28" fill="#f7f6f1"/>
 
   <text x="600" y="56" text-anchor="middle" class="rm-title">Learnix — feuille de route</text>
   <text x="600" y="84" text-anchor="middle" class="rm-subtitle">Quatre phases d'élargissement du public · un chantier corpus mené en parallèle</text>
@@ -36,28 +36,28 @@
   <line x1="862" y1="209" x2="892" y2="209" stroke="#d9ded8" stroke-width="3" stroke-dasharray="6 5" marker-end="url(#rm-arrow-muted)"/>
 
   <!-- Phase 0 : atteinte -->
-  <rect x="64" y="150" width="238" height="118" rx="10" fill="#dcebe2" stroke="#1f7a78" stroke-width="3" filter="url(#rm-shadow)"/>
+  <rect x="64" y="150" width="238" height="118" rx="12" fill="#dcebe2" stroke="#1f7a78" stroke-width="3" filter="url(#rm-shadow)"/>
   <text x="183" y="192" text-anchor="middle" class="rm-box-title">Phase 0</text>
   <text x="183" y="221" text-anchor="middle" class="rm-box-text">Démonstrateur</text>
   <text x="183" y="245" text-anchor="middle" class="rm-box-text">privé · opérationnel</text>
   <text x="183" y="298" text-anchor="middle" class="rm-badge" fill="#1f7a78">● ATTEINTE</text>
 
   <!-- Phase 1 -->
-  <rect x="342" y="150" width="238" height="118" rx="10" fill="#ffffff" stroke="#315f8d" stroke-width="3" filter="url(#rm-shadow)"/>
+  <rect x="342" y="150" width="238" height="118" rx="12" fill="#ffffff" stroke="#315f8d" stroke-width="3" filter="url(#rm-shadow)"/>
   <text x="461" y="192" text-anchor="middle" class="rm-box-title">Phase 1</text>
   <text x="461" y="221" text-anchor="middle" class="rm-box-text">Pilote interne</text>
   <text x="461" y="245" text-anchor="middle" class="rm-box-text">équipe restreinte</text>
   <text x="461" y="298" text-anchor="middle" class="rm-badge" fill="#5b6872">○ À VENIR</text>
 
   <!-- Phase 2 -->
-  <rect x="620" y="150" width="238" height="118" rx="10" fill="#ffffff" stroke="#d49a26" stroke-width="3" filter="url(#rm-shadow)"/>
+  <rect x="620" y="150" width="238" height="118" rx="12" fill="#ffffff" stroke="#d49a26" stroke-width="3" filter="url(#rm-shadow)"/>
   <text x="739" y="192" text-anchor="middle" class="rm-box-title">Phase 2</text>
   <text x="739" y="221" text-anchor="middle" class="rm-box-text">Bêta enseignants</text>
   <text x="739" y="245" text-anchor="middle" class="rm-box-text">volontaires accompagnés</text>
   <text x="739" y="298" text-anchor="middle" class="rm-badge" fill="#5b6872">○ À VENIR</text>
 
   <!-- Phase 3 -->
-  <rect x="898" y="150" width="238" height="118" rx="10" fill="#ffffff" stroke="#c85f4a" stroke-width="3" filter="url(#rm-shadow)"/>
+  <rect x="898" y="150" width="238" height="118" rx="12" fill="#ffffff" stroke="#c85f4a" stroke-width="3" filter="url(#rm-shadow)"/>
   <text x="1017" y="192" text-anchor="middle" class="rm-box-title">Phase 3</text>
   <text x="1017" y="221" text-anchor="middle" class="rm-box-text">Service institutionnel</text>
   <text x="1017" y="245" text-anchor="middle" class="rm-box-text">si la gouvernance suit</text>
@@ -71,7 +71,7 @@
   <text x="331" y="356" class="rm-label" fill="#315f8d">en parallèle</text>
 
   <!-- Boîte Moodle -->
-  <rect x="64" y="404" width="520" height="150" rx="10" fill="#dce8f3" stroke="#315f8d" stroke-width="3" filter="url(#rm-shadow)"/>
+  <rect x="64" y="404" width="520" height="150" rx="12" fill="#dce8f3" stroke="#315f8d" stroke-width="3" filter="url(#rm-shadow)"/>
   <text x="88" y="446" class="rm-box-title">Chantier corpus Moodle</text>
   <text x="88" y="478" class="rm-box-text">Extraction des contenus pédagogiques de Moodle</text>
   <text x="88" y="502" class="rm-box-text">via les web services REST, vers le corpus indexé.</text>
@@ -81,7 +81,7 @@
   <line x1="584" y1="479" x2="632" y2="479" stroke="#315f8d" stroke-width="3" marker-end="url(#rm-arrow)"/>
 
   <!-- Boîte Corpus -->
-  <rect x="636" y="404" width="500" height="150" rx="10" fill="#fff5dd" stroke="#d49a26" stroke-width="3" filter="url(#rm-shadow)"/>
+  <rect x="636" y="404" width="500" height="150" rx="12" fill="#fff5dd" stroke="#d49a26" stroke-width="3" filter="url(#rm-shadow)"/>
   <text x="660" y="446" class="rm-box-title">Corpus indexé de Learnix</text>
   <text x="660" y="478" class="rm-box-text">PDF et pages web sélectionnés — et, demain,</text>
   <text x="660" y="502" class="rm-box-text">les contenus Moodle validés.</text>

@@ -19,7 +19,7 @@
     </filter>
     <style>
       .ac-title { font: 700 30px Georgia, "Times New Roman", serif; fill: #172a3a; }
-      .ac-sub { font: 400 17px Arial, sans-serif; fill: #5b6872; }
+      .ac-sub { font: 400 16px Arial, sans-serif; fill: #5b6872; }
       .ac-box-title { font: 700 21px Arial, sans-serif; fill: #172a3a; }
       .ac-box-text { font: 400 15.5px Arial, sans-serif; fill: #4f5b66; }
       .ac-flow { font: 700 14px Arial, sans-serif; }
