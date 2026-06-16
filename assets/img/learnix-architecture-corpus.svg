@@ -15,13 +15,13 @@
       <path d="M0,0 L0,7 L9,3.5 z" fill="#8a97a0"/>
     </marker>
     <filter id="ac-shadow" x="-12%" y="-12%" width="124%" height="135%">
-      <feDropShadow dx="0" dy="7" stdDeviation="8" flood-color="#172a3a" flood-opacity=".13"/>
+      <feDropShadow dx="0" dy="8" stdDeviation="9" flood-color="#172a3a" flood-opacity=".12"/>
     </filter>
     <style>
-      .ac-title { font: 700 30px Arial, sans-serif; fill: #172a3a; }
+      .ac-title { font: 700 30px Georgia, "Times New Roman", serif; fill: #172a3a; }
       .ac-sub { font: 400 17px Arial, sans-serif; fill: #5b6872; }
       .ac-box-title { font: 700 21px Arial, sans-serif; fill: #172a3a; }
-      .ac-box-text { font: 400 15.5px Arial, sans-serif; fill: #5b6872; }
+      .ac-box-text { font: 400 15.5px Arial, sans-serif; fill: #4f5b66; }
       .ac-flow { font: 700 14px Arial, sans-serif; }
       .ac-zone { font: 700 14px Arial, sans-serif; letter-spacing: .08em; }
       .ac-legend { font: 400 15px Arial, sans-serif; fill: #5b6872; }

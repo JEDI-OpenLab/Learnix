@@ -343,6 +343,7 @@ a:hover {
 
 .architecture-visual img {
   width: 100%;
+  cursor: zoom-in;
 }
 
 .architecture-visual figcaption {
@@ -387,13 +388,39 @@ a:hover {
   backdrop-filter: blur(4px);
 }
 
-.image-dialog img {
+.dialog-hint {
+  display: none;
+}
+
+.dialog-viewer {
+  max-height: calc(100vh - 8rem);
+  overflow: auto;
+  -webkit-overflow-scrolling: touch;
+  border-radius: var(--radius);
+  background: var(--paper);
+}
+
+.dialog-viewer img {
+  display: block;
   width: 100%;
-  max-height: calc(100vh - 8.5rem);
-  object-fit: contain;
+  height: auto;
   border: 1px solid var(--line);
   border-radius: var(--radius);
   background: var(--paper);
+}
+
+@media (max-width: 700px) {
+  .dialog-hint {
+    display: block;
+    margin: 0 0 0.6rem;
+    color: var(--muted);
+    font-size: 0.85rem;
+  }
+
+  .dialog-viewer img {
+    width: 760px;
+    max-width: none;
+  }
 }
 
 .dialog-header {
@@ -1144,6 +1171,15 @@ blockquote {
   .content-section {
     padding-left: 1rem;
     padding-right: 1rem;
+  }
+
+  .addie-grid li,
+  .feature-card,
+  .setting-item,
+  .method-list li,
+  .pipeline-list li,
+  .scenario-output {
+    min-height: 0;
   }
 
   .intro-copy h1 {

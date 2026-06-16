@@ -217,3 +217,11 @@ if (corpusDialog && openCorpus && closeCorpus) {
     }
   });
 }
+
+document.querySelectorAll(".architecture-visual").forEach((figure) => {
+  const img = figure.querySelector("img");
+  const trigger = figure.querySelector(".figure-action");
+  if (img && trigger) {
+    img.addEventListener("click", () => trigger.click());
+  }
+});
