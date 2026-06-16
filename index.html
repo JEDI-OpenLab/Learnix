@@ -11,7 +11,7 @@
     <meta property="og:image" content="assets/img/learnix.png">
     <link rel="icon" href="assets/img/favicon.png" type="image/png">
     <link rel="apple-touch-icon" href="assets/img/learnix.png">
-    <link rel="stylesheet" href="assets/css/styles.css?v=2026-05-30.2">
+    <link rel="stylesheet" href="assets/css/styles.css?v=2026-05-30.3">
   </head>
   <body>
     <a class="skip-link" href="#contenu">Aller au contenu</a>
@@ -86,7 +86,7 @@
             </div>
             <div>
               <dt>Licence</dt>
-              <dd>MIT</dd>
+              <dd>CC BY 4.0</dd>
             </div>
           </dl>
         </div>
@@ -639,12 +639,39 @@ Style :
             </div>
           </details>
 
+          <details class="doc-panel" id="documentation-moodle" open>
+            <summary>Chantier Moodle vers Learnix : suivi et playbook technique</summary>
+            <div class="doc-panel-body">
+              <p>
+                Un chantier en cours étudie comment faire de Moodle une source documentaire pour Learnix. On n'importe
+                pas la base Moodle : on extrait un corpus pédagogique filtré, structuré et validé via les web services,
+                puis on l'importe dans AnythingLLM. Statut : conception terminée, réalisation à venir (Phase 0 bis).
+              </p>
+              <ul class="check-list">
+                <li>Extraction par les web services REST de Moodle, jamais par lecture directe de la base SQL.</li>
+                <li>Compte technique dédié et token révocable, limité aux seules fonctions de contenu.</li>
+                <li>Types pleinement extractibles : Pages, Étiquettes et ressources Fichier. À éviter pour le contenu essentiel : Livres, Dossiers, Glossaires et Wikis, mal exposés par l'API.</li>
+                <li>Sortie en Markdown lisible, avec un manifeste et le chemin de catégories pour préserver le contexte pédagogique.</li>
+                <li>Validation humaine obligatoire et exclusion par défaut des notes, rendus, comptes et traces : aucune donnée personnelle dans Learnix.</li>
+                <li>Feuille de route en six étapes, du cours test à la recette, avec un livrable vérifiable à chaque étape.</li>
+              </ul>
+              <p>
+                Le suivi détaillé et le playbook technique pas à pas sont tenus à jour dans la documentation du dépôt
+                (<code>docs/avancement-moodle.md</code> et <code>docs/extraction-technique-moodle.md</code>).
+              </p>
+            </div>
+          </details>
+
           <details class="doc-panel" id="documentation-licence">
             <summary>Licence</summary>
             <div class="doc-panel-body">
               <p>
-                Le projet Learnix est distribué sous licence MIT. Les logiciels, services tiers,
-                corpus importés et ressources citées conservent leurs droits propres.
+                Learnix est une ressource éducative libre (REL) au sens de la Recommandation UNESCO de
+                2019. Sauf mention contraire, les contenus originaux sont placés sous licence Creative
+                Commons Attribution 4.0 International — CC BY 4.0. Les contenus tiers conservent leurs
+                droits et licences propres. Voir le site principal de
+                <a href="https://jedi-openlab.github.io/jedi/" target="_blank" rel="noreferrer">JEDI-OpenLab</a>
+                pour plus d'informations.
               </p>
             </div>
           </details>
@@ -661,10 +688,10 @@ Style :
           </svg>
           <span><strong>JEDI-OpenLab</strong> · Pédagogie ouverte, conçue avec soin.</span>
         </span>
-        <span class="footer-version">Version éditoriale 2026-05-30.2</span>
+        <span class="footer-version">Version éditoriale 2026-05-30.3</span>
       </div>
     </footer>
 
-    <script src="assets/js/app.js?v=2026-05-30.2"></script>
+    <script src="assets/js/app.js?v=2026-05-30.3"></script>
   </body>
 </html>

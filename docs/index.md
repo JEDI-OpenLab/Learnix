@@ -12,4 +12,7 @@ Cette documentation accompagne la webapp Learnix. Elle ne donne pas accès au ch
 6. Lire la page [Telegram](telegram.md) pour comprendre pourquoi et comment le bot privé est utilisé.
 7. Utiliser les [tests](tests.md) et les fiches pour vérifier le comportement.
 8. Consulter les [points de vigilance](vigilance.md) avant toute extension : limites des IA grand public, corpus maîtrisé, impact et changement d'échelle.
-9. Étudier la [trajectoire institutionnelle](trajectoire.md) si un pilote plus large est envisagé.
+9. Étudier l'[extraction Moodle expérimentale](moodle-extraction.md) pour la méthode, si Moodle doit devenir une source documentaire locale.
+10. Suivre l'[avancement du chantier Moodle](avancement-moodle.md), source de vérité de l'état d'avancement et de la feuille de route en six étapes.
+11. Appliquer le [playbook technique d'extraction Moodle](extraction-technique-moodle.md) pour la mise en œuvre pas à pas.
+12. Étudier la [trajectoire institutionnelle](trajectoire.md) si un pilote plus large est envisagé.

@@ -59,6 +59,9 @@ learnix/
 - [Telegram](docs/telegram.md) : rôle du bot privé, configuration et limites.
 - [Tests et évaluation](docs/tests.md)
 - [Points de vigilance](docs/vigilance.md) : limites des IA grand public, corpus maîtrisé, impact et passage à l'échelle.
+- [Extraction Moodle expérimentale](docs/moodle-extraction.md) : piste locale et privée pour structurer des contenus Moodle avant import dans Learnix.
+- [Avancement — Extraction Moodle vers Learnix](docs/avancement-moodle.md) : suivi du chantier, état d'avancement et feuille de route en six étapes.
+- [Extraction technique Moodle](docs/extraction-technique-moodle.md) : playbook pas à pas (web services, fonctions REST, téléchargement des fichiers, manifeste, import dans AnythingLLM, recette).
 - [Trajectoire institutionnelle](docs/trajectoire.md)
 
 ## Fiches réutilisables
