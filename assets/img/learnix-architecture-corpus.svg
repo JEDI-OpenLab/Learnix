@@ -1,0 +1,165 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="820" viewBox="0 0 1280 820" preserveAspectRatio="xMidYMid meet" role="img" aria-labelledby="corpus-title corpus-desc">
+  <title id="corpus-title">Architecture du corpus Learnix : sources manuelle et Moodle</title>
+  <desc id="corpus-desc">Schéma montrant deux sources alimentant le corpus indexé de Learnix : d'un côté un corpus manuel ajouté à la main ; de l'autre Moodle, dont les contenus sont extraits chaque nuit par un script via les web services REST (en lecture seule, avec un token dédié), validés humainement, puis importés. Les deux sources convergent dans AnythingLLM (workspace Learnix), sont indexées dans la base vectorielle, et Learnix répond à partir du corpus.</desc>
+  <defs>
+    <marker id="ac-blue" markerWidth="11" markerHeight="11" refX="8" refY="3.5" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L0,7 L9,3.5 z" fill="#315f8d"/>
+    </marker>
+    <marker id="ac-teal" markerWidth="11" markerHeight="11" refX="8" refY="3.5" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L0,7 L9,3.5 z" fill="#1f7a78"/>
+    </marker>
+    <marker id="ac-coral" markerWidth="11" markerHeight="11" refX="8" refY="3.5" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L0,7 L9,3.5 z" fill="#c85f4a"/>
+    </marker>
+    <marker id="ac-muted" markerWidth="11" markerHeight="11" refX="8" refY="3.5" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L0,7 L9,3.5 z" fill="#8a97a0"/>
+    </marker>
+    <filter id="ac-shadow" x="-12%" y="-12%" width="124%" height="135%">
+      <feDropShadow dx="0" dy="7" stdDeviation="8" flood-color="#172a3a" flood-opacity=".13"/>
+    </filter>
+    <style>
+      .ac-title { font: 700 30px Arial, sans-serif; fill: #172a3a; }
+      .ac-sub { font: 400 17px Arial, sans-serif; fill: #5b6872; }
+      .ac-box-title { font: 700 21px Arial, sans-serif; fill: #172a3a; }
+      .ac-box-text { font: 400 15.5px Arial, sans-serif; fill: #5b6872; }
+      .ac-flow { font: 700 14px Arial, sans-serif; }
+      .ac-zone { font: 700 14px Arial, sans-serif; letter-spacing: .08em; }
+      .ac-legend { font: 400 15px Arial, sans-serif; fill: #5b6872; }
+      .ac-icon { fill: none; stroke-width: 2.2; stroke-linecap: round; stroke-linejoin: round; }
+    </style>
+  </defs>
+
+  <rect x="0" y="0" width="1280" height="820" rx="28" fill="#f7f6f1"/>
+  <text x="640" y="56" text-anchor="middle" class="ac-title">Learnix : alimenter le corpus, du manuel à Moodle</text>
+  <text x="640" y="86" text-anchor="middle" class="ac-sub">Deux sources convergent vers un seul corpus indexé — l'ajout manuel et la synchronisation Moodle par web services REST.</text>
+
+  <!-- Étiquettes de zones -->
+  <text x="56" y="132" class="ac-zone" fill="#1f7a78">SOURCES DU CORPUS</text>
+  <text x="392" y="132" class="ac-zone" fill="#315f8d">EXTRACTION &amp; VALIDATION</text>
+  <text x="716" y="132" class="ac-zone" fill="#1f7a78">INDEXATION &amp; RÉPONSE</text>
+
+  <!-- ===== Boîtes ===== -->
+  <g filter="url(#ac-shadow)">
+    <!-- Corpus manuel -->
+    <rect x="56" y="152" width="256" height="138" rx="12" fill="#dcebe2" stroke="#1f7a78" stroke-width="3"/>
+    <!-- Moodle -->
+    <rect x="56" y="486" width="256" height="138" rx="12" fill="#fff5dd" stroke="#d49a26" stroke-width="3"/>
+    <!-- Planificateur -->
+    <rect x="392" y="402" width="232" height="60" rx="12" fill="#eef1f4" stroke="#8a97a0" stroke-width="2.5"/>
+    <!-- Script d'extraction -->
+    <rect x="392" y="486" width="256" height="138" rx="12" fill="#dce8f3" stroke="#315f8d" stroke-width="3"/>
+    <!-- Validation humaine -->
+    <rect x="716" y="486" width="232" height="138" rx="12" fill="#ffffff" stroke="#1f7a78" stroke-width="3"/>
+    <!-- AnythingLLM (hub) -->
+    <rect x="716" y="152" width="262" height="210" rx="12" fill="#dcebe2" stroke="#1f7a78" stroke-width="3"/>
+    <!-- Learnix répond -->
+    <rect x="1018" y="152" width="206" height="210" rx="12" fill="#f2ded8" stroke="#c85f4a" stroke-width="3"/>
+  </g>
+
+  <!-- ===== Icônes ===== -->
+  <!-- Corpus manuel : main + document -->
+  <g class="ac-icon" stroke="#1f7a78">
+    <rect x="170" y="180" width="20" height="26" rx="2"/>
+    <line x1="175" y1="188" x2="185" y2="188"/>
+    <line x1="175" y1="194" x2="185" y2="194"/>
+    <line x1="175" y1="200" x2="182" y2="200"/>
+  </g>
+  <!-- Moodle : toque (mortarboard) -->
+  <g class="ac-icon" stroke="#d49a26">
+    <path d="M168 521 L184 514 L200 521 L184 528 Z"/>
+    <path d="M174 524 L174 532 Q184 537 194 532 L194 524"/>
+    <line x1="200" y1="521" x2="200" y2="530"/>
+  </g>
+  <!-- Planificateur : horloge -->
+  <g class="ac-icon" stroke="#5b6872">
+    <circle cx="416" cy="432" r="11"/>
+    <line x1="416" y1="432" x2="416" y2="426"/>
+    <line x1="416" y1="432" x2="421" y2="432"/>
+  </g>
+  <!-- Script : sync (deux flèches circulaires) -->
+  <g class="ac-icon" stroke="#315f8d">
+    <path d="M510 511 a12 12 0 0 1 20 -4"/>
+    <path d="M530 499 l0 8 l-8 0"/>
+    <path d="M530 521 a12 12 0 0 1 -20 4"/>
+    <path d="M510 533 l0 -8 l8 0"/>
+  </g>
+  <!-- Validation : coche -->
+  <g class="ac-icon" stroke="#1f7a78">
+    <circle cx="828" cy="516" r="12"/>
+    <path d="M822 516 l4 4 l8 -9"/>
+  </g>
+  <!-- AnythingLLM : couches -->
+  <g class="ac-icon" stroke="#1f7a78">
+    <path d="M847 188 L867 180 L887 188 L867 196 Z"/>
+    <path d="M847 196 L867 204 L887 196"/>
+    <path d="M847 204 L867 212 L887 204"/>
+  </g>
+  <!-- Learnix répond : bulle -->
+  <g class="ac-icon" stroke="#c85f4a">
+    <path d="M1109 182 h26 a4 4 0 0 1 4 4 v14 a4 4 0 0 1 -4 4 h-16 l-7 6 v-6 h-3 a4 4 0 0 1 -4 -4 v-14 a4 4 0 0 1 4 -4 z"/>
+    <circle cx="1116" cy="193" r="1.3" fill="#c85f4a" stroke="none"/>
+    <circle cx="1123" cy="193" r="1.3" fill="#c85f4a" stroke="none"/>
+    <circle cx="1130" cy="193" r="1.3" fill="#c85f4a" stroke="none"/>
+  </g>
+
+  <!-- ===== Textes des boîtes ===== -->
+  <!-- Corpus manuel -->
+  <text x="184" y="232" text-anchor="middle" class="ac-box-title">Corpus manuel</text>
+  <text x="184" y="258" text-anchor="middle" class="ac-box-text">PDF, DOCX, pages web</text>
+  <text x="184" y="279" text-anchor="middle" class="ac-box-text">ajoutés à la main</text>
+  <!-- Moodle -->
+  <text x="184" y="566" text-anchor="middle" class="ac-box-title">Moodle</text>
+  <text x="184" y="592" text-anchor="middle" class="ac-box-text">cours, Pages, Étiquettes,</text>
+  <text x="184" y="613" text-anchor="middle" class="ac-box-text">ressources Fichier</text>
+  <!-- Planificateur -->
+  <text x="438" y="437" class="ac-box-text" fill="#172a3a">Chaque nuit · planifiable</text>
+  <!-- Script -->
+  <text x="520" y="566" text-anchor="middle" class="ac-box-title">Script d'extraction</text>
+  <text x="520" y="592" text-anchor="middle" class="ac-box-text">web services REST</text>
+  <text x="520" y="613" text-anchor="middle" class="ac-box-text">token dédié · lecture seule</text>
+  <!-- Validation -->
+  <text x="832" y="566" text-anchor="middle" class="ac-box-title">Validation</text>
+  <text x="832" y="592" text-anchor="middle" class="ac-box-text">relecture · droits</text>
+  <text x="832" y="613" text-anchor="middle" class="ac-box-text">aucune donnée perso</text>
+  <!-- AnythingLLM -->
+  <text x="847" y="240" text-anchor="middle" class="ac-box-title">AnythingLLM</text>
+  <text x="847" y="266" text-anchor="middle" class="ac-box-text">workspace Learnix</text>
+  <text x="847" y="290" text-anchor="middle" class="ac-box-text">import + indexation</text>
+  <text x="847" y="314" text-anchor="middle" class="ac-box-text">base vectorielle · RAG</text>
+  <!-- Learnix répond -->
+  <text x="1121" y="240" text-anchor="middle" class="ac-box-title">Learnix répond</text>
+  <text x="1121" y="266" text-anchor="middle" class="ac-box-text">à partir du corpus</text>
+  <text x="1121" y="290" text-anchor="middle" class="ac-box-text">ou refus explicite</text>
+  <text x="1121" y="314" text-anchor="middle" class="ac-box-text">Telegram / web</text>
+
+  <!-- ===== Flèches ===== -->
+  <!-- Corpus manuel -> AnythingLLM (lane manuelle, teal) -->
+  <path d="M312 210 H710" fill="none" stroke="#1f7a78" stroke-width="5" stroke-linecap="round" marker-end="url(#ac-teal)"/>
+  <text x="500" y="198" text-anchor="middle" class="ac-flow" fill="#1f7a78">ajout direct</text>
+
+  <!-- Moodle <-> Script : allers-retours web services REST (bleu) -->
+  <path d="M388 512 H316" fill="none" stroke="#315f8d" stroke-width="4" stroke-linecap="round" marker-end="url(#ac-blue)"/>
+  <path d="M316 560 H388" fill="none" stroke="#315f8d" stroke-width="4" stroke-linecap="round" marker-end="url(#ac-blue)"/>
+  <text x="352" y="500" text-anchor="middle" class="ac-flow" fill="#315f8d">requêtes</text>
+  <text x="352" y="584" text-anchor="middle" class="ac-flow" fill="#315f8d">contenus</text>
+
+  <!-- Planificateur -> Script (déclenche, muted) -->
+  <path d="M508 462 V480" fill="none" stroke="#8a97a0" stroke-width="3.5" stroke-linecap="round" marker-end="url(#ac-muted)"/>
+
+  <!-- Script -> Validation (bleu) -->
+  <path d="M648 555 H710" fill="none" stroke="#315f8d" stroke-width="5" stroke-linecap="round" marker-end="url(#ac-blue)"/>
+
+  <!-- Validation -> AnythingLLM (remonte, bleu) -->
+  <path d="M832 486 V366" fill="none" stroke="#315f8d" stroke-width="5" stroke-linecap="round" marker-end="url(#ac-blue)"/>
+  <text x="848" y="430" text-anchor="start" class="ac-flow" fill="#315f8d">import</text>
+
+  <!-- AnythingLLM -> Learnix répond (coral) -->
+  <path d="M978 257 H1012" fill="none" stroke="#c85f4a" stroke-width="5" stroke-linecap="round" marker-end="url(#ac-coral)"/>
+
+  <!-- ===== Légende ===== -->
+  <line x1="60" y1="712" x2="92" y2="712" stroke="#1f7a78" stroke-width="5" stroke-linecap="round"/>
+  <text x="100" y="717" class="ac-legend">Ajout manuel : vous alimentez le corpus directement.</text>
+  <line x1="60" y1="744" x2="92" y2="744" stroke="#315f8d" stroke-width="5" stroke-linecap="round"/>
+  <text x="100" y="749" class="ac-legend">Synchronisation Moodle : chaque nuit, le script interroge Moodle (web services REST, lecture seule), puis valide avant import.</text>
+  <text x="60" y="781" class="ac-legend" fill="#8a97a0">Le script ne lit que des contenus pédagogiques : ni notes, ni inscriptions, ni données personnelles d'étudiants.</text>
+</svg>

@@ -195,3 +195,25 @@ if (roadmapDialog && openRoadmap && closeRoadmap) {
     }
   });
 }
+
+const corpusDialog = document.querySelector("#corpus-dialog");
+const openCorpus = document.querySelector("[data-open-corpus]");
+const closeCorpus = document.querySelector("[data-close-corpus]");
+
+if (corpusDialog && openCorpus && closeCorpus) {
+  openCorpus.addEventListener("click", () => {
+    if (typeof corpusDialog.showModal === "function") {
+      corpusDialog.showModal();
+    }
+  });
+
+  closeCorpus.addEventListener("click", () => {
+    corpusDialog.close();
+  });
+
+  corpusDialog.addEventListener("click", (event) => {
+    if (event.target === corpusDialog) {
+      corpusDialog.close();
+    }
+  });
+}
