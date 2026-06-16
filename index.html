@@ -7,23 +7,23 @@
     <link rel="canonical" href="https://jedi-openlab.github.io/Learnix/">
     <meta property="og:url" content="https://jedi-openlab.github.io/Learnix/">
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:image" content="https://jedi-openlab.github.io/Learnix/assets/img/learnix.png?v=2026-06-16.7">
+    <meta name="twitter:image" content="https://jedi-openlab.github.io/Learnix/assets/img/learnix.png?v=2026-06-16.8">
     <title>Learnix | Démonstrateur d'assistant documentaire</title>
     <meta name="description" content="Learnix documente une preuve de concept d'assistant documentaire construit avec AnythingLLM, un corpus maîtrisé et une approche RAG.">
     <meta property="og:title" content="Learnix | Assistant documentaire">
     <meta property="og:description" content="Démonstrateur pour explorer les usages raisonnés de l'IA générative à partir d'un corpus maîtrisé.">
     <meta property="og:type" content="website">
-    <meta property="og:image" content="https://jedi-openlab.github.io/Learnix/assets/img/learnix.png?v=2026-06-16.7">
-    <link rel="icon" href="assets/img/favicon.png?v=2026-06-16.7" type="image/png">
-    <link rel="apple-touch-icon" href="assets/img/learnix.png?v=2026-06-16.7">
-    <link rel="stylesheet" href="assets/css/styles.css?v=2026-06-16.7">
+    <meta property="og:image" content="https://jedi-openlab.github.io/Learnix/assets/img/learnix.png?v=2026-06-16.8">
+    <link rel="icon" href="assets/img/favicon.png?v=2026-06-16.8" type="image/png">
+    <link rel="apple-touch-icon" href="assets/img/learnix.png?v=2026-06-16.8">
+    <link rel="stylesheet" href="assets/css/styles.css?v=2026-06-16.8">
   </head>
   <body>
     <a class="skip-link" href="#contenu">Aller au contenu</a>
 
     <header class="app-header">
       <a class="brand" href="#demonstrateur" aria-label="Accueil Learnix">
-        <img src="assets/img/learnix.png?v=2026-06-16.7" alt="" class="brand-mark">
+        <img src="assets/img/learnix.png?v=2026-06-16.8" alt="" class="brand-mark">
         <span>
           <strong>Learnix</strong>
           <small>assistant documentaire</small>
@@ -99,7 +99,7 @@
           </dl>
         </div>
         <figure class="architecture-visual" aria-labelledby="architecture-title">
-          <img src="assets/img/learnix-architecture.svg?v=2026-06-16.7" alt="Schéma de l'architecture Learnix : utilisateur, Telegram, AnythingLLM, corpus, modèle mistral-small-4-119b, réponse.">
+          <img src="assets/img/learnix-architecture.svg?v=2026-06-16.8" alt="Schéma de l'architecture Learnix : utilisateur, Telegram, AnythingLLM, corpus, modèle mistral-small-4-119b, réponse.">
           <figcaption id="architecture-title">Architecture de principe du démonstrateur Learnix — état Phase 0</figcaption>
           <button class="figure-action" type="button" data-open-architecture>
             Agrandir le schéma
@@ -116,7 +116,7 @@
         </div>
         <p class="dialog-hint">Faites défiler le schéma pour l'explorer.</p>
         <div class="dialog-viewer">
-          <img src="assets/img/learnix-architecture.svg?v=2026-06-16.7" alt="Schéma agrandi de l'architecture Learnix : utilisateur, Telegram, AnythingLLM, corpus, modèle mistral-small-4-119b, réponse.">
+          <img src="assets/img/learnix-architecture.svg?v=2026-06-16.8" alt="Schéma agrandi de l'architecture Learnix : utilisateur, Telegram, AnythingLLM, corpus, modèle mistral-small-4-119b, réponse.">
         </div>
       </dialog>
 
@@ -249,31 +249,44 @@
         </ol>
       </section>
 
-      <section id="corpus" class="content-section section-anchor two-column">
-        <div>
-          <p class="eyebrow">Corpus</p>
-          <h2>La maîtrise documentaire est le vrai moteur de Learnix.</h2>
-          <p>
-            Le corpus doit être limité, propre, identifiable, actualisable et sans débordement. Un document
-            copié sur le serveur ne suffit pas : il doit être importé, rattaché au workspace et indexé pour être utilisable.
-          </p>
-          <p>
-            Demain, Moodle pourra alimenter ce corpus : c'est l'objet du
-            <a href="#moodle">chantier corpus Moodle</a>, mené en parallèle des phases de déploiement.
-          </p>
-          <a class="text-link" href="#documentation-corpus">Voir les principes de corpus →</a>
+      <section id="corpus" class="content-section section-anchor">
+        <div class="two-column">
+          <div>
+            <p class="eyebrow">Corpus</p>
+            <h2>La maîtrise documentaire est le vrai moteur de Learnix.</h2>
+            <p>
+              Le corpus doit être limité, propre, identifiable, actualisable et sans débordement. Un document
+              copié sur le serveur ne suffit pas : il doit être importé, rattaché au workspace et indexé pour être utilisable.
+            </p>
+            <p>
+              Demain, Moodle pourra alimenter ce corpus : c'est l'objet du
+              <a href="#moodle">chantier corpus Moodle</a>, mené en parallèle des phases de déploiement.
+            </p>
+            <a class="text-link" href="#documentation-corpus">Voir les principes de corpus →</a>
+          </div>
+          <div class="check-panel">
+            <h3>Inventaire minimal</h3>
+            <ul class="check-list">
+              <li>Titre, auteur ou organisme, année.</li>
+              <li>Statut public, privé ou interne.</li>
+              <li>Licence et conditions de réutilisation.</li>
+              <li>Thème pédagogique principal.</li>
+              <li>Date d'import et qualité d'extraction.</li>
+              <li>Raison de l'inclusion dans Learnix.</li>
+            </ul>
+          </div>
         </div>
-        <div class="check-panel">
-          <h3>Inventaire minimal</h3>
-          <ul class="check-list">
-            <li>Titre, auteur ou organisme, année.</li>
-            <li>Statut public, privé ou interne.</li>
-            <li>Licence et conditions de réutilisation.</li>
-            <li>Thème pédagogique principal.</li>
-            <li>Date d'import et qualité d'extraction.</li>
-            <li>Raison de l'inclusion dans Learnix.</li>
-          </ul>
-        </div>
+
+        <article class="seal-note">
+          <h3>Un corpus scellé : rien n'y entre sans validation</h3>
+          <p>
+            Le corpus est fermé par conception. Dans la version actuelle du démonstrateur, vous pouvez envoyer un
+            fichier via Telegram et Learnix l'analysera le temps de l'échange — mais ce document n'est
+            <strong>jamais ajouté au corpus documentaire, ni conservé en mémoire</strong>. Aucune donnée nouvelle ne
+            peut être injectée dans le corpus sans l'intervention d'un <strong>administrateur fonctionnel</strong> :
+            l'import, le rattachement au workspace et l'indexation restent des gestes maîtrisés et tracés.
+          </p>
+        </article>
       </section>
 
       <section id="reglages" class="content-section section-anchor band">
@@ -371,6 +384,11 @@ Style :
             ne circule pas dans Telegram, et le bot permet d'interroger rapidement le corpus depuis un téléphone
             ou un ordinateur. C'est utile pour une preuve de concept personnelle, pas pour un service institutionnel ouvert.
           </p>
+          <p>
+            Vous pouvez aussi y envoyer un fichier : Learnix l'analyse le temps de l'échange, mais
+            <strong>ne l'ajoute pas au corpus et ne le conserve pas</strong> — voir
+            <a href="#corpus">la maîtrise du corpus</a>.
+          </p>
           <a class="text-link" href="#documentation-telegram">Lire la configuration Telegram</a>
         </div>
         <div class="check-panel">
@@ -449,7 +467,7 @@ Style :
         </div>
 
         <figure class="architecture-visual" aria-labelledby="roadmap-title">
-          <img src="assets/img/learnix-roadmap.svg?v=2026-06-16.7" alt="Feuille de route Learnix : quatre phases d'élargissement du public — Phase 0 démonstrateur privé (atteinte), Phase 1 pilote interne, Phase 2 bêta enseignants, Phase 3 service institutionnel — et, en parallèle, un chantier transverse corpus Moodle en cours qui alimente le corpus indexé.">
+          <img src="assets/img/learnix-roadmap.svg?v=2026-06-16.8" alt="Feuille de route Learnix : quatre phases d'élargissement du public — Phase 0 démonstrateur privé (atteinte), Phase 1 pilote interne, Phase 2 bêta enseignants, Phase 3 service institutionnel — et, en parallèle, un chantier transverse corpus Moodle en cours qui alimente le corpus indexé.">
           <figcaption id="roadmap-title">Quatre phases d'audience, et un chantier corpus Moodle mené en parallèle</figcaption>
           <button class="figure-action" type="button" data-open-roadmap>Agrandir le schéma</button>
         </figure>
@@ -501,7 +519,7 @@ Style :
         </div>
         <p class="dialog-hint">Faites défiler le schéma pour l'explorer.</p>
         <div class="dialog-viewer">
-          <img src="assets/img/learnix-roadmap.svg?v=2026-06-16.7" alt="Schéma agrandi de la feuille de route Learnix : quatre phases d'élargissement du public (Phase 0 atteinte à Phase 3 service institutionnel) et un chantier transverse corpus Moodle en cours, mené en parallèle, qui alimente le corpus indexé.">
+          <img src="assets/img/learnix-roadmap.svg?v=2026-06-16.8" alt="Schéma agrandi de la feuille de route Learnix : quatre phases d'élargissement du public (Phase 0 atteinte à Phase 3 service institutionnel) et un chantier transverse corpus Moodle en cours, mené en parallèle, qui alimente le corpus indexé.">
         </div>
       </dialog>
 
@@ -519,7 +537,7 @@ Style :
         </div>
 
         <figure class="architecture-visual" aria-labelledby="corpus-schema-title">
-          <img src="assets/img/learnix-architecture-corpus.svg?v=2026-06-16.7" alt="Architecture du corpus Learnix : à gauche, deux sources — un corpus manuel (PDF, DOCX, pages web ajoutés à la main) et Moodle (cours, Pages, Étiquettes, ressources Fichier) ; au centre, un script d'extraction interroge Moodle via les web services REST, déclenché chaque nuit, puis une étape de validation humaine sans données personnelles ; à droite, les deux sources sont importées et indexées dans AnythingLLM (workspace Learnix), et Learnix répond à partir du corpus.">
+          <img src="assets/img/learnix-architecture-corpus.svg?v=2026-06-16.8" alt="Architecture du corpus Learnix : à gauche, deux sources — un corpus manuel (PDF, DOCX, pages web ajoutés à la main) et Moodle (cours, Pages, Étiquettes, ressources Fichier) ; au centre, un script d'extraction interroge Moodle via les web services REST, déclenché chaque nuit, puis une étape de validation humaine sans données personnelles ; à droite, les deux sources sont importées et indexées dans AnythingLLM (workspace Learnix), et Learnix répond à partir du corpus.">
           <figcaption id="corpus-schema-title">Deux sources, un corpus indexé : ajout manuel et synchronisation Moodle par web services REST</figcaption>
           <button class="figure-action" type="button" data-open-corpus>Agrandir le schéma</button>
         </figure>
@@ -559,7 +577,7 @@ Style :
         </div>
         <p class="dialog-hint">Faites défiler le schéma pour l'explorer.</p>
         <div class="dialog-viewer">
-          <img src="assets/img/learnix-architecture-corpus.svg?v=2026-06-16.7" alt="Schéma agrandi de l'architecture du corpus Learnix : deux sources (corpus manuel ajouté à la main, et Moodle synchronisé chaque nuit via les web services REST en lecture seule, avec validation humaine et sans données personnelles) convergent dans AnythingLLM (workspace Learnix), sont indexées dans la base vectorielle, et Learnix répond à partir du corpus.">
+          <img src="assets/img/learnix-architecture-corpus.svg?v=2026-06-16.8" alt="Schéma agrandi de l'architecture du corpus Learnix : deux sources (corpus manuel ajouté à la main, et Moodle synchronisé chaque nuit via les web services REST en lecture seule, avec validation humaine et sans données personnelles) convergent dans AnythingLLM (workspace Learnix), sont indexées dans la base vectorielle, et Learnix répond à partir du corpus.">
         </div>
       </dialog>
 
@@ -788,10 +806,10 @@ Style :
           </svg>
           <span><strong>JEDI-OpenLab</strong> · Pédagogie ouverte, conçue avec soin.</span>
         </span>
-        <span class="footer-version">Version éditoriale 2026-06-16.7</span>
+        <span class="footer-version">Version éditoriale 2026-06-16.8</span>
       </div>
     </footer>
 
-    <script src="assets/js/app.js?v=2026-06-16.7"></script>
+    <script src="assets/js/app.js?v=2026-06-16.8"></script>
   </body>
 </html>
