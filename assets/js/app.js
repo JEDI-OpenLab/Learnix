@@ -87,7 +87,7 @@ const internalDocumentTargets = {
   "docs/parametrage.md": "#documentation-parametrage",
   "docs/telegram.md": "#documentation-telegram",
   "docs/tests.md": "#documentation-tests",
-  "docs/trajectoire.md": "#documentation-trajectoire",
+  "docs/trajectoire.md": "#feuille-de-route",
   "docs/vigilance.md": "#documentation-vigilance",
   "fiches/scenarios-demo.md": "#documentation-tests",
   "fiches/grille-tests.md": "#documentation-tests",
@@ -170,6 +170,28 @@ if (architectureDialog && openArchitecture && closeArchitecture) {
   architectureDialog.addEventListener("click", (event) => {
     if (event.target === architectureDialog) {
       architectureDialog.close();
+    }
+  });
+}
+
+const roadmapDialog = document.querySelector("#roadmap-dialog");
+const openRoadmap = document.querySelector("[data-open-roadmap]");
+const closeRoadmap = document.querySelector("[data-close-roadmap]");
+
+if (roadmapDialog && openRoadmap && closeRoadmap) {
+  openRoadmap.addEventListener("click", () => {
+    if (typeof roadmapDialog.showModal === "function") {
+      roadmapDialog.showModal();
+    }
+  });
+
+  closeRoadmap.addEventListener("click", () => {
+    roadmapDialog.close();
+  });
+
+  roadmapDialog.addEventListener("click", (event) => {
+    if (event.target === roadmapDialog) {
+      roadmapDialog.close();
     }
   });
 }

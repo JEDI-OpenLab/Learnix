@@ -11,7 +11,7 @@
     <meta property="og:image" content="assets/img/learnix.png">
     <link rel="icon" href="assets/img/favicon.png" type="image/png">
     <link rel="apple-touch-icon" href="assets/img/learnix.png">
-    <link rel="stylesheet" href="assets/css/styles.css?v=2026-05-30.3">
+    <link rel="stylesheet" href="assets/css/styles.css?v=2026-06-16.1">
   </head>
   <body>
     <a class="skip-link" href="#contenu">Aller au contenu</a>
@@ -36,6 +36,7 @@
           <a href="#architecture">Architecture</a>
           <a href="#installation">Méthode</a>
           <a href="#demo">Évaluation</a>
+          <a href="#feuille-de-route">Feuille de route</a>
           <a href="#documentation">Repères</a>
           <a href="https://jedi-openlab.github.io/jedi/" target="_blank" rel="noopener">JEDI OpenLab</a>
         </div>
@@ -43,6 +44,7 @@
           <span class="nav-section-label">Accès détaillés</span>
           <a href="#addie">ADDIE</a>
           <a href="#corpus">Corpus</a>
+          <a href="#moodle">Moodle</a>
           <a href="#reglages">Réglages</a>
           <a href="#telegram">Telegram</a>
           <a href="#limites">Limites</a>
@@ -92,7 +94,7 @@
         </div>
         <figure class="architecture-visual" aria-labelledby="architecture-title">
           <img src="assets/img/learnix-architecture.svg" alt="Schéma de l'architecture Learnix : utilisateur, Telegram, AnythingLLM, corpus, modèle mistral-small-4-119b, réponse.">
-          <figcaption id="architecture-title">Architecture de principe du démonstrateur Learnix</figcaption>
+          <figcaption id="architecture-title">Architecture de principe du démonstrateur Learnix — état Phase 0</figcaption>
           <button class="figure-action" type="button" data-open-architecture>
             Agrandir le schéma
           </button>
@@ -144,7 +146,9 @@
           <p>
             Learnix n'est pas seulement un assemblage technique. Le projet est alimenté par une démarche
             d'ingénierie pédagogique : analyser le besoin, concevoir l'usage, développer le corpus,
-            tester l'implémentation et évaluer les effets.
+            tester l'implémentation et évaluer les effets. Ces cinq étapes de conception ne sont pas
+            les phases de déploiement : la trajectoire du projet est décrite dans la
+            <a href="#feuille-de-route">feuille de route</a>.
           </p>
         </div>
         <ol class="addie-grid">
@@ -243,6 +247,10 @@
           <p>
             Le corpus doit être limité, propre, identifiable, actualisable et sans débordement. Un document
             copié sur le serveur ne suffit pas : il doit être importé, rattaché au workspace et indexé pour être utilisable.
+          </p>
+          <p>
+            Demain, Moodle pourra alimenter ce corpus : c'est l'objet du
+            <a href="#moodle">chantier corpus Moodle</a>, mené en parallèle des phases de déploiement.
           </p>
           <a class="text-link" href="#documentation-corpus">Voir les principes de corpus</a>
         </div>
@@ -418,21 +426,105 @@ Style :
         </div>
       </section>
 
-      <section id="trajectoire" class="content-section section-anchor two-column">
-        <div>
-          <p class="eyebrow">Passage à l'échelle</p>
-          <h2>Du démonstrateur personnel au pilote accompagné</h2>
+      <section id="feuille-de-route" class="content-section section-anchor">
+        <span id="trajectoire" aria-hidden="true"></span>
+        <div class="section-heading">
+          <p class="eyebrow">Feuille de route</p>
+          <h2>Du démonstrateur personnel au service institutionnel</h2>
           <p>
-            Learnix peut servir de preuve d'usage. L'étape raisonnable n'est pas une ouverture large immédiate,
-            mais un pilote interne avec une équipe restreinte, un corpus gouverné et une évaluation explicite.
+            La trajectoire de Learnix se lit sur un seul axe : l'élargissement progressif du public, du
+            démonstrateur privé jusqu'à un éventuel service institutionnel. En parallèle, un chantier transverse
+            enrichit le corpus en y branchant Moodle — il ne déplace pas le curseur du public, il n'a donc pas
+            de numéro de phase.
           </p>
         </div>
+
+        <figure class="architecture-visual" aria-labelledby="roadmap-title">
+          <img src="assets/img/learnix-roadmap.svg" alt="Feuille de route Learnix : quatre phases d'élargissement du public — Phase 0 démonstrateur privé (atteinte), Phase 1 pilote interne, Phase 2 bêta enseignants, Phase 3 service institutionnel — et, en parallèle, un chantier transverse corpus Moodle en cours qui alimente le corpus indexé.">
+          <figcaption id="roadmap-title">Quatre phases d'audience, et un chantier corpus Moodle mené en parallèle</figcaption>
+          <button class="figure-action" type="button" data-open-roadmap>Agrandir le schéma</button>
+        </figure>
+
         <ol class="timeline">
-          <li><strong>Phase 0</strong><span>Démonstrateur personnel privé.</span></li>
-          <li><strong>Phase 1</strong><span>Pilote interne au centre d'innovation pédagogique.</span></li>
-          <li><strong>Phase 2</strong><span>Bêta avec enseignants volontaires et accompagnés.</span></li>
-          <li><strong>Phase 3</strong><span>Service institutionnel, si la gouvernance suit.</span></li>
+          <li>
+            <span class="phase-chip is-done">Atteinte</span>
+            <strong>Phase 0 — Démonstrateur personnel privé</strong>
+            <span>Prouver la faisabilité pour un seul utilisateur : corpus maîtrisé, RAG, refus hors corpus, bot privé.</span>
+            <span class="phase-crit">Franchie : le démonstrateur fonctionne en usage personnel.</span>
+          </li>
+          <li>
+            <span class="phase-chip is-todo">À venir</span>
+            <strong>Phase 1 — Pilote interne</strong>
+            <span>Tester l'intérêt avec une équipe restreinte au centre d'innovation pédagogique.</span>
+            <span class="phase-crit">Condition : un corpus gouverné et des critères d'évaluation explicites.</span>
+          </li>
+          <li>
+            <span class="phase-chip is-todo">À venir</span>
+            <strong>Phase 2 — Bêta enseignants</strong>
+            <span>Éprouver des usages réels avec des enseignants volontaires et accompagnés.</span>
+            <span class="phase-crit">Condition : charte d'usage, authentification, support et recueil de retours.</span>
+          </li>
+          <li>
+            <span class="phase-chip is-todo">À venir</span>
+            <strong>Phase 3 — Service institutionnel</strong>
+            <span>Envisager une ouverture large, uniquement si la gouvernance suit.</span>
+            <span class="phase-crit">Condition : infrastructure, gouvernance documentaire, cadrage RGPD, validation DSI.</span>
+          </li>
         </ol>
+
+        <article class="capacity-card">
+          <span class="phase-chip is-current">Chantier en cours</span>
+          <h3>Chantier transverse — Corpus Moodle</h3>
+          <p>
+            Brancher Moodle comme source documentaire pour enrichir le corpus de Learnix. Ce chantier ne déplace
+            pas le curseur du public : il se mène <strong>en parallèle</strong> des phases et alimente le
+            <a href="#corpus">corpus indexé</a>. C'est pourquoi il n'a pas de numéro de phase.
+          </p>
+          <a class="text-link" href="#moodle">Voir le détail du chantier →</a>
+        </article>
+      </section>
+
+      <dialog class="image-dialog" id="roadmap-dialog" aria-labelledby="roadmap-dialog-title">
+        <div class="dialog-header">
+          <h2 id="roadmap-dialog-title">Feuille de route Learnix</h2>
+          <button class="dialog-close" type="button" data-close-roadmap aria-label="Fermer le schéma agrandi">
+            Fermer
+          </button>
+        </div>
+        <img src="assets/img/learnix-roadmap.svg" alt="Schéma agrandi de la feuille de route Learnix : quatre phases d'élargissement du public (Phase 0 atteinte à Phase 3 service institutionnel) et un chantier transverse corpus Moodle en cours, mené en parallèle, qui alimente le corpus indexé.">
+      </dialog>
+
+      <section id="moodle" class="content-section section-anchor two-column">
+        <div>
+          <p class="eyebrow">Chantier transverse</p>
+          <h2>Brancher Moodle comme source du corpus</h2>
+          <p>
+            Un chantier en cours étudie comment faire de Moodle une source documentaire pour Learnix. On n'importe
+            pas la base Moodle : on extrait un corpus pédagogique filtré, structuré et validé via les web services,
+            puis on l'importe dans AnythingLLM. Il alimente le <a href="#corpus">corpus indexé</a> et se mène en
+            parallèle des phases de déploiement.
+          </p>
+          <p class="phase-status">
+            <span class="phase-chip is-current">En cours</span>
+            Conception terminée. Alimentation du cours test en cours (étape A sur six) ; activation des web services
+            et script d'extraction encore à venir.
+          </p>
+          <p>
+            Le suivi détaillé et le playbook technique pas à pas sont tenus à jour dans la documentation du dépôt.
+          </p>
+          <a class="text-link" href="#corpus">Voir les principes de corpus →</a>
+        </div>
+        <div class="check-panel">
+          <h3>Principes du chantier</h3>
+          <ul class="check-list">
+            <li>Extraction par les web services REST de Moodle, jamais par lecture directe de la base SQL.</li>
+            <li>Compte technique dédié et token révocable, limité aux seules fonctions de contenu.</li>
+            <li>Types pleinement extractibles : Pages, Étiquettes et ressources Fichier. À éviter pour le contenu essentiel : Livres, Dossiers, Glossaires et Wikis, mal exposés par l'API.</li>
+            <li>Sortie en Markdown lisible, avec un manifeste et le chemin de catégories pour préserver le contexte pédagogique.</li>
+            <li>Validation humaine obligatoire et exclusion par défaut des notes, rendus, comptes et traces : aucune donnée personnelle dans Learnix.</li>
+            <li>Feuille de route en six étapes (A→F), du cours test à la recette, avec un livrable vérifiable à chaque étape.</li>
+          </ul>
+        </div>
       </section>
 
       <section id="soutenabilite" class="content-section section-anchor band two-column">
@@ -621,43 +713,15 @@ Style :
             </div>
           </details>
 
-          <details class="doc-panel" id="documentation-trajectoire">
-            <summary>Trajectoire et impact</summary>
+          <details class="doc-panel" id="documentation-moodle">
+            <summary>Chantier corpus Moodle</summary>
             <div class="doc-panel-body">
               <p>
-                Le démonstrateur utilise une API mise à disposition dans le cadre de l'accord-cadre avec l'AMUE.
-                C'est utile pour prouver l'usage, mais le passage à l'échelle demanderait une réflexion technique,
-                écologique et institutionnelle.
-              </p>
-              <ul class="check-list">
-                <li>Phase 0 : démonstrateur personnel privé.</li>
-                <li>Phase 1 : pilote interne avec une équipe restreinte.</li>
-                <li>Phase 2 : bêta accompagnée avec enseignants volontaires.</li>
-                <li>Phase 3 : service institutionnel uniquement si la gouvernance suit.</li>
-                <li>Un LLM local peut être envisagé avec un corpus local indexé, sans forcément réentraîner un modèle.</li>
-              </ul>
-            </div>
-          </details>
-
-          <details class="doc-panel" id="documentation-moodle" open>
-            <summary>Chantier Moodle vers Learnix : suivi et playbook technique</summary>
-            <div class="doc-panel-body">
-              <p>
-                Un chantier en cours étudie comment faire de Moodle une source documentaire pour Learnix. On n'importe
-                pas la base Moodle : on extrait un corpus pédagogique filtré, structuré et validé via les web services,
-                puis on l'importe dans AnythingLLM. Statut : conception terminée, réalisation à venir (Phase 0 bis).
-              </p>
-              <ul class="check-list">
-                <li>Extraction par les web services REST de Moodle, jamais par lecture directe de la base SQL.</li>
-                <li>Compte technique dédié et token révocable, limité aux seules fonctions de contenu.</li>
-                <li>Types pleinement extractibles : Pages, Étiquettes et ressources Fichier. À éviter pour le contenu essentiel : Livres, Dossiers, Glossaires et Wikis, mal exposés par l'API.</li>
-                <li>Sortie en Markdown lisible, avec un manifeste et le chemin de catégories pour préserver le contexte pédagogique.</li>
-                <li>Validation humaine obligatoire et exclusion par défaut des notes, rendus, comptes et traces : aucune donnée personnelle dans Learnix.</li>
-                <li>Feuille de route en six étapes, du cours test à la recette, avec un livrable vérifiable à chaque étape.</li>
-              </ul>
-              <p>
-                Le suivi détaillé et le playbook technique pas à pas sont tenus à jour dans la documentation du dépôt
-                (<code>docs/avancement-moodle.md</code> et <code>docs/extraction-technique-moodle.md</code>).
+                Le chantier qui branche Moodle comme source du corpus est présenté dans la
+                <a href="#feuille-de-route">feuille de route</a> et la section
+                <a href="#moodle">chantier Moodle</a>. Le suivi détaillé et le playbook technique sont tenus à
+                jour dans la documentation du dépôt (<code>docs/avancement-moodle.md</code> et
+                <code>docs/extraction-technique-moodle.md</code>).
               </p>
             </div>
           </details>
@@ -688,10 +752,10 @@ Style :
           </svg>
           <span><strong>JEDI-OpenLab</strong> · Pédagogie ouverte, conçue avec soin.</span>
         </span>
-        <span class="footer-version">Version éditoriale 2026-05-30.3</span>
+        <span class="footer-version">Version éditoriale 2026-06-16.1</span>
       </div>
     </footer>
 
-    <script src="assets/js/app.js?v=2026-05-30.3"></script>
+    <script src="assets/js/app.js?v=2026-06-16.1"></script>
   </body>
 </html>

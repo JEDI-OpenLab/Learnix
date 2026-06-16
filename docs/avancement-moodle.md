@@ -1,7 +1,7 @@
 # Avancement — Extraction Moodle vers Learnix
 
 Dernière mise à jour : 16 juin 2026
-Statut global : conception terminée, réalisation non commencée (Phase 0 bis). Feuille de route affinée après recherche technique.
+Statut global : conception terminée ; alimentation du cours test en cours, réalisation technique (web services, script) encore à venir. Chantier transverse de la feuille de route (corpus Moodle), mené en parallèle des phases. Feuille de route affinée après recherche technique.
 
 Cette page est le journal de suivi du chantier qui vise à enrichir Learnix avec des contenus pédagogiques issus de Moodle. Elle complète trois documents :
 

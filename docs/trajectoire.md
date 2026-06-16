@@ -13,11 +13,11 @@ Objectif : montrer la faisabilité.
 - bot privé ;
 - documentation de la démarche.
 
-## Phase 0 bis : extraction Moodle expérimentale
+## Chantier transverse : corpus Moodle
 
 Objectif : tester en local et en privé si un Moodle expérimental peut devenir une source documentaire structurée pour Learnix.
 
-Cette phase ne correspond pas à un passage à l'échelle. Elle sert à vérifier qu'il est possible d'extraire des contenus pédagogiques depuis Moodle, avec leur catégorie, leurs sous-catégories, leur cours, leur section et leur type d'activité, sans importer de données personnelles ni de traces d'apprentissage.
+Ce chantier n'est pas une phase de la trajectoire : il ne déplace pas le curseur du public et ne correspond pas à un passage à l'échelle. Il se mène en parallèle des phases et enrichit le corpus de Learnix. Il sert à vérifier qu'il est possible d'extraire des contenus pédagogiques depuis Moodle, avec leur catégorie, leurs sous-catégories, leur cours, leur section et leur type d'activité, sans importer de données personnelles ni de traces d'apprentissage.
 
 Principes :
 
