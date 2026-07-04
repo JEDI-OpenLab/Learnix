@@ -113,7 +113,7 @@
         </div>
         <figure class="architecture-visual" aria-labelledby="architecture-title">
           <img src="assets/img/learnix-architecture.svg?v=2026-06-16.8" alt="Schéma de l'architecture Learnix : utilisateur, Telegram, AnythingLLM, corpus, modèle mistral-small-4-119b, réponse.">
-          <figcaption id="architecture-title">Architecture de principe du démonstrateur Learnix — état Phase 0</figcaption>
+          <figcaption id="architecture-title">Architecture de principe du démonstrateur Learnix, état Phase 0</figcaption>
           <button class="figure-action" type="button" data-open-architecture>
             Agrandir le schéma
           </button>
@@ -294,7 +294,7 @@
           <h3>Un corpus scellé : rien n'y entre sans validation</h3>
           <p>
             Le corpus est fermé par conception. Dans la version actuelle du démonstrateur, vous pouvez envoyer un
-            fichier via Telegram et Learnix l'analysera le temps de l'échange — mais ce document n'est
+            fichier via Telegram et Learnix l'analysera le temps de l'échange, mais ce document n'est
             <strong>jamais ajouté au corpus documentaire, ni conservé en mémoire</strong>. Aucune donnée nouvelle ne
             peut être injectée dans le corpus sans l'intervention d'un <strong>administrateur fonctionnel</strong> :
             l'import, le rattachement au workspace et l'indexation restent des gestes maîtrisés et tracés.
@@ -399,7 +399,7 @@ Style :
           </p>
           <p>
             Vous pouvez aussi y envoyer un fichier : Learnix l'analyse le temps de l'échange, mais
-            <strong>ne l'ajoute pas au corpus et ne le conserve pas</strong> — voir
+            <strong>ne l'ajoute pas au corpus et ne le conserve pas</strong>, voir
             <a href="#corpus">la maîtrise du corpus</a>.
           </p>
           <a class="text-link" href="#documentation-telegram">Lire la configuration Telegram</a>
@@ -474,13 +474,13 @@ Style :
           <p>
             La trajectoire de Learnix se lit sur un seul axe : l'élargissement progressif du public, du
             démonstrateur privé jusqu'à un éventuel service institutionnel. En parallèle, un chantier transverse
-            enrichit le corpus en y branchant Moodle — il ne déplace pas le curseur du public, il n'a donc pas
+            enrichit le corpus en y branchant Moodle, il ne déplace pas le curseur du public, il n'a donc pas
             de numéro de phase.
           </p>
         </div>
 
         <figure class="architecture-visual" aria-labelledby="roadmap-title">
-          <img src="assets/img/learnix-roadmap.svg?v=2026-06-16.8" alt="Feuille de route Learnix : quatre phases d'élargissement du public — Phase 0 démonstrateur privé (atteinte), Phase 1 pilote interne, Phase 2 bêta enseignants, Phase 3 service institutionnel — et, en parallèle, un chantier transverse corpus Moodle en cours qui alimente le corpus indexé.">
+          <img src="assets/img/learnix-roadmap.svg?v=2026-06-16.8" alt="Feuille de route Learnix : quatre phases d'élargissement du public, Phase 0 démonstrateur privé (atteinte), Phase 1 pilote interne, Phase 2 bêta enseignants, Phase 3 service institutionnel, et, en parallèle, un chantier transverse corpus Moodle en cours qui alimente le corpus indexé.">
           <figcaption id="roadmap-title">Quatre phases d'audience, et un chantier corpus Moodle mené en parallèle</figcaption>
           <button class="figure-action" type="button" data-open-roadmap>Agrandir le schéma</button>
         </figure>
@@ -488,25 +488,25 @@ Style :
         <ol class="timeline">
           <li>
             <span class="phase-chip is-done">Atteinte</span>
-            <strong>Phase 0 — Démonstrateur personnel privé</strong>
+            <strong>Phase 0 : Démonstrateur personnel privé</strong>
             <span>Prouver la faisabilité pour un seul utilisateur : corpus maîtrisé, RAG, refus hors corpus, bot privé.</span>
             <span class="phase-crit">Franchie : le démonstrateur fonctionne en usage personnel.</span>
           </li>
           <li>
             <span class="phase-chip is-todo">À venir</span>
-            <strong>Phase 1 — Pilote interne</strong>
+            <strong>Phase 1 : Pilote interne</strong>
             <span>Tester l'intérêt avec une équipe restreinte au centre d'innovation pédagogique.</span>
             <span class="phase-crit">Condition : un corpus gouverné et des critères d'évaluation explicites.</span>
           </li>
           <li>
             <span class="phase-chip is-todo">À venir</span>
-            <strong>Phase 2 — Bêta enseignants</strong>
+            <strong>Phase 2 : Bêta enseignants</strong>
             <span>Éprouver des usages réels avec des enseignants volontaires et accompagnés.</span>
             <span class="phase-crit">Condition : charte d'usage, authentification, support et recueil de retours.</span>
           </li>
           <li>
             <span class="phase-chip is-todo">À venir</span>
-            <strong>Phase 3 — Service institutionnel</strong>
+            <strong>Phase 3 : Service institutionnel</strong>
             <span>Envisager une ouverture large, uniquement si la gouvernance suit.</span>
             <span class="phase-crit">Condition : infrastructure, gouvernance documentaire, cadrage RGPD, validation DSI.</span>
           </li>
@@ -514,7 +514,7 @@ Style :
 
         <article class="capacity-card">
           <span class="phase-chip is-current">En cours</span>
-          <h3>Chantier transverse — Corpus Moodle</h3>
+          <h3>Chantier transverse : Corpus Moodle</h3>
           <p>
             Brancher Moodle comme source documentaire pour enrichir le corpus de Learnix. Ce chantier se mène
             <strong>en parallèle</strong> des phases et alimente le <a href="#corpus">corpus indexé</a>.
@@ -543,14 +543,14 @@ Style :
           <p>
             Le corpus de Learnix se nourrira de deux sources complémentaires. D'un côté un <strong>corpus manuel</strong>,
             que l'on alimente document par document. De l'autre un <strong>corpus Moodle</strong>, dont les contenus
-            pédagogiques sont extraits automatiquement — par exemple chaque nuit — via les web services REST de Moodle,
+            pédagogiques sont extraits automatiquement, par exemple chaque nuit, via les web services REST de Moodle,
             en lecture seule et après validation. On n'importe jamais la base Moodle : on en extrait un corpus filtré,
             structuré et sans données personnelles, qui rejoint le <a href="#corpus">corpus indexé</a>.
           </p>
         </div>
 
         <figure class="architecture-visual" aria-labelledby="corpus-schema-title">
-          <img src="assets/img/learnix-architecture-corpus.svg?v=2026-06-16.8" alt="Architecture du corpus Learnix : à gauche, deux sources — un corpus manuel (PDF, DOCX, pages web ajoutés à la main) et Moodle (cours, Pages, Étiquettes, ressources Fichier) ; au centre, un script d'extraction interroge Moodle via les web services REST, déclenché chaque nuit, puis une étape de validation humaine sans données personnelles ; à droite, les deux sources sont importées et indexées dans AnythingLLM (workspace Learnix), et Learnix répond à partir du corpus.">
+          <img src="assets/img/learnix-architecture-corpus.svg?v=2026-06-16.8" alt="Architecture du corpus Learnix : à gauche, deux sources, un corpus manuel (PDF, DOCX, pages web ajoutés à la main) et Moodle (cours, Pages, Étiquettes, ressources Fichier) ; au centre, un script d'extraction interroge Moodle via les web services REST, déclenché chaque nuit, puis une étape de validation humaine sans données personnelles ; à droite, les deux sources sont importées et indexées dans AnythingLLM (workspace Learnix), et Learnix répond à partir du corpus.">
           <figcaption id="corpus-schema-title">Deux sources, un corpus indexé : ajout manuel et synchronisation Moodle par web services REST</figcaption>
           <button class="figure-action" type="button" data-open-corpus>Agrandir le schéma</button>
         </figure>
@@ -799,7 +799,7 @@ Style :
               <p>
                 Learnix est une ressource éducative libre (REL) au sens de la Recommandation UNESCO de
                 2019. Sauf mention contraire, les contenus originaux sont placés sous licence Creative
-                Commons Attribution 4.0 International — CC BY 4.0. Les contenus tiers conservent leurs
+                Commons Attribution 4.0 International, CC BY 4.0. Les contenus tiers conservent leurs
                 droits et licences propres. Voir le site principal de
                 <a href="https://jedi-openlab.github.io/jedi/" target="_blank" rel="noopener noreferrer">JEDI-OpenLab</a>
                 pour plus d'informations.

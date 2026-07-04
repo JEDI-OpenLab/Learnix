@@ -4,7 +4,7 @@ Cette note documente une piste de travail pour poursuivre les expérimentations 
 
 L'objectif n'est pas de connecter Learnix directement à toute la base Moodle. L'objectif est d'extraire un corpus pédagogique maîtrisé, structuré, validé, puis importé dans AnythingLLM.
 
-Documents liés : le suivi du chantier est tenu à jour dans [Avancement — Extraction Moodle vers Learnix](avancement-moodle.md) et la mise en œuvre pas à pas est décrite dans le [playbook technique d'extraction Moodle](extraction-technique-moodle.md).
+Documents liés : le suivi du chantier est tenu à jour dans [Avancement : Extraction Moodle vers Learnix](avancement-moodle.md) et la mise en œuvre pas à pas est décrite dans le [playbook technique d'extraction Moodle](extraction-technique-moodle.md).
 
 ## Intention
 

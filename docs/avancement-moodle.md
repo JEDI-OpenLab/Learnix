@@ -1,4 +1,4 @@
-# Avancement — Extraction Moodle vers Learnix
+# Avancement : Extraction Moodle vers Learnix
 
 Dernière mise à jour : 16 juin 2026
 Statut global : conception terminée ; alimentation du cours test en cours, réalisation technique (web services, script) encore à venir. Chantier transverse de la feuille de route (corpus Moodle), mené en parallèle des phases. Feuille de route affinée après recherche technique.
@@ -87,7 +87,7 @@ Conséquence pratique, à appliquer dès maintenant pendant l'alimentation du Mo
 
 Chaque étape produit un livrable vérifiable avant de passer à la suivante. Le détail technique de chaque étape figure dans `extraction-technique-moodle.md`.
 
-### Étape A — Cadrage et alimentation du cours test — en cours
+### Étape A : Cadrage et alimentation du cours test, en cours
 
 - Confirmer la version exacte de Moodle installée.
 - Construire au moins un cours réel et représentatif, en privilégiant Pages, Étiquettes et ressources Fichier.
@@ -97,7 +97,7 @@ Chaque étape produit un livrable vérifiable avant de passer à la suivante. Le
 
 Livrable : un cours test prêt et une fiche de configuration du premier test.
 
-### Étape B — Activation des web services Moodle — à faire
+### Étape B : Activation des web services Moodle, à faire
 
 - Créer un compte technique dédié à l'export.
 - Activer les web services et le protocole REST.
@@ -108,7 +108,7 @@ Livrable : un cours test prêt et une fiche de configuration du premier test.
 
 Livrable : un token fonctionnel, testé par un premier appel de lecture, stocké hors dépôt.
 
-### Étape C — Script d'extraction — à faire
+### Étape C : Script d'extraction, à faire
 
 - Lire une configuration listant les catégories ou cours à extraire.
 - Parcourir l'arborescence catégories, cours, sections, modules.
@@ -120,7 +120,7 @@ Livrable : un token fonctionnel, testé par un premier appel de lecture, stocké
 
 Livrable : le dossier `corpus/moodle-export/` avec documents, manifeste et rapports.
 
-### Étape D — Validation humaine — à faire
+### Étape D : Validation humaine, à faire
 
 - Relire les documents : utiles, compréhensibles hors Moodle, métadonnées suffisantes.
 - Vérifier l'absence de données personnelles.
@@ -129,7 +129,7 @@ Livrable : le dossier `corpus/moodle-export/` avec documents, manifeste et rappo
 
 Livrable : un corpus validé, marqué bon pour import.
 
-### Étape E — Transfert et import dans AnythingLLM — à faire
+### Étape E : Transfert et import dans AnythingLLM, à faire
 
 - Transférer le corpus validé vers le serveur Learnix.
 - Importer les documents dans AnythingLLM, soit par l'interface, soit par l'API développeur, en les rattachant au workspace Learnix.
@@ -138,7 +138,7 @@ Livrable : un corpus validé, marqué bon pour import.
 
 Livrable : des documents Moodle indexés dans le workspace Learnix.
 
-### Étape F — Recette et tests — à faire
+### Étape F : Recette et tests, à faire
 
 - Exécuter une grille de test spécifique aux contenus Moodle.
 - Vérifier que Learnix répond à partir des documents extraits.

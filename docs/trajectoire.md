@@ -39,7 +39,7 @@ Livrables attendus :
 - procédure d'import dans AnythingLLM ;
 - grille de test spécifique au corpus Moodle.
 
-Voir la note dédiée : [Extraction Moodle expérimentale](moodle-extraction.md), le suivi du chantier dans [Avancement — Extraction Moodle vers Learnix](avancement-moodle.md) et le [playbook technique d'extraction Moodle](extraction-technique-moodle.md).
+Voir la note dédiée : [Extraction Moodle expérimentale](moodle-extraction.md), le suivi du chantier dans [Avancement : Extraction Moodle vers Learnix](avancement-moodle.md) et le [playbook technique d'extraction Moodle](extraction-technique-moodle.md).
 
 ## Phase 1 : pilote interne CIP
 
